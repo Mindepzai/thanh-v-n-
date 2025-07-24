@@ -1,0 +1,2545 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Graph Meta Tags for SEO and Social Sharing -->
+    <meta property="og:title" content="Phan Thanh Vân - Nữ Hoàng Ánh Kim">
+    <meta property="og:description" content="Khám phá hành trình âm nhạc đầy cảm hứng của Phan Thanh Vân, nơi đam mê và nỗ lực hội tụ.">
+    <meta property="og:image" content="https://i.postimg.cc/LJpyqvzt/671a83ef-26bd-418b-8dbd-faa2d9ce070b.jpg"> <!-- Link to Phan Thanh Vân's avatar -->
+    <meta property="og:url" content="https://yourwebsite.com"> <!-- Replace with your actual website URL -->
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Phan Thanh Vân - Nữ Hoàng Ánh Kim">
+    <meta name="twitter:description" content="Khám phá hành trình âm nhạc đầy cảm hứng của Phan Thanh Vân, nơi đam mê và nỗ lực hội tụ.">
+    <meta name="twitter:image" content="https://i.postimg.cc/LJpyqvzt/671a83ef-26bd-418b-8dbd-faa2d9ce070b.jpg">
+
+    <title>Trang web về Phan Thanh Vân</title>
+    <!-- Tải Tailwind CSS từ CDN để tạo kiểu nhanh chóng và responsive -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tải Particles.js từ CDN cho hiệu ứng hạt trên Hero Section -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Tải AOS (Animate On Scroll) Library cho hiệu ứng cuộn trang -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Tải Font Awesome cho các biểu tượng mạng xã hội -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Tải tệp CSS chứa biến màu và các lớp tiện ích -->
+    <link rel="stylesheet" href="colors.css">
+    <style>
+        /* Định nghĩa các biến CSS cho màu sắc để dễ quản lý */
+        /* Các biến này đã được chuyển sang colors.css */
+        /* Chỉ giữ lại các biến đặc biệt nếu chúng không nằm trong colors.css */
+        :root {
+            --text-glow-color-cutscene: rgba(255, 119, 233, 0.8); /* Màu glow riêng cho cutscene */
+        }
+
+        /* Đặt font Inter làm mặc định cho toàn bộ trang để có giao diện hiện đại */
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--queen-bg-gradient); /* Áp dụng gradient nền mới từ Queen Vân */
+            background-attachment: fixed; /* Make background pattern fixed for subtle parallax feel */
+            scroll-behavior: smooth; /* Cuộn mượt khi click vào link điều hướng */
+            color: var(--stardust-silver); /* Màu chữ mặc định Bạc Ánh Bụi Sao */
+            overflow-x: hidden; /* Ngăn chặn cuộn ngang gây khó chịu */
+            /* Custom cursor for desktop with glow */
+            cursor: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyNCAyNCcgd2lkdGg9JzI0JyBoZWlnaHQ9JzI0JyBmaWxsPSJub25lIiBzdHJva2U9JyNGRjY5QjQnIHN0cm9rZS13aWR0aD0nMiIgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJyBzdHJva2UtbGluZWpvaW49J3JvdW5kJz48cGF0aCBkPSdNMTEuOTk5OTkgMWExIDMgMyAwIDAg0C0zIDN2OGEzIDMgMyAwIDAgMCA2IDBWNGEzIDMgMyAwIDAg0C0zLTN6Jz48L3BhdGg+PHBhdGggZD0nTTIwIDEwdi0yYzQuNDE4IDAtOC0zLjU4Mi04LTgnPjwvcGF0aD48cGF0aCBkPSdNNCAxMHYtMmE3IDcgMCAwIDEgMTQgMHYtNyc+PC9wYXthIGQ9J00xMiAxOXY0Jz48L3BhdGg+PHBhdGggZD0nTTggMjNIMTYnPjwvcGF0aD48L3N2Zz4=") 12 12, auto;
+            /* Disable text selection for a cleaner touch experience on mobile */
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none;   /* Safari */
+            -moz-user-select: none;      /* Old versions of Firefox */
+            -ms-user-select: none;       /* Internet Explorer/Edge */
+            user-select: none;           /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+        }
+
+        /* Custom text selection color */
+        ::selection {
+            background-color: var(--neon-pink-bold);
+            color: var(--jade-white);
+        }
+        ::-moz-selection {
+            background-color: var(--neon-pink-bold);
+            color: var(--jade-white);
+        }
+
+        /* Custom Scrollbar - Thanh cuộn tùy chỉnh để tăng tính thẩm mỹ */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--stage-grey);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--neon-pink-bold); /* Màu hồng chủ đạo */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--fiery-pink); /* Màu hồng đậm hơn khi hover */
+        }
+
+        /* Preloader (Spinner) - Hiệu ứng tải trang ban đầu */
+        .spinner {
+            border: 8px solid var(--stage-grey); /* Màu xám nhạt */
+            border-top: 8px solid var(--neon-pink-bold); /* Màu hồng chủ đạo */
+            border-radius: 50%; /* Hình tròn */
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite; /* Hiệu ứng xoay liên tục */
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Cutscene Overlay - Lớp phủ mở đầu trang */
+        #cutscene-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--cutscene-radial-gradient); /* Nền gradient cho cutscene */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000; /* Đảm bảo hiển thị trên cùng */
+            opacity: 1;
+            transition: opacity 1s ease-out; /* Hiệu ứng mờ dần khi ẩn */
+            overflow: hidden; /* Ngăn chặn scroll trong cutscene */
+            box-shadow: var(--cutscene-box-shadow); /* Thêm bóng đổ bên trong */
+        }
+
+        .cutscene-bg-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0; /* Ban đầu ẩn */
+            transition: opacity 1.5s ease-in-out, transform 4s ease-out; /* Chuyển đổi mượt mà và zoom chậm hơn */
+            z-index: 1;
+            transform: scale(1.08); /* Bắt đầu với zoom nhẹ hơn */
+        }
+
+        .cutscene-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: var(--jade-white);
+            text-shadow: 0 4px 10px rgba(0,0,0,0.5); /* Bóng chữ để dễ đọc */
+        }
+
+        #cutscene-text {
+            font-size: 2.5rem; /* Kích thước chữ lớn */
+            font-weight: 800; /* Rất đậm */
+            margin-bottom: 2rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+            text-shadow: 0 0 5px var(--text-glow-color-cutscene); /* Initial subtle glow */
+            animation: cutsceneTextGlow 2s infinite alternate; /* Continuous subtle glow */
+        }
+        @keyframes cutsceneTextGlow {
+            0% { text-shadow: 0 0 5px var(--text-glow-color-cutscene); }
+            100% { text-shadow: 0 0 15px var(--text-glow-color-cutscene), 0 0 25px rgba(255, 119, 233, 0.5); }
+        }
+
+        #enter-site-button {
+            @apply btn-glow; /* Sử dụng lớp tiện ích mới */
+            opacity: 0;
+            transform: scale(0.8);
+            display: none; /* Ban đầu ẩn */
+        }
+
+        /* Main Content Wrapper - Ban đầu ẩn, sau đó hiển thị */
+        #main-content-wrapper {
+            opacity: 0;
+            transition: opacity 1.5s ease-out; /* Tăng thời gian chuyển đổi */
+            pointer-events: none; /* Ngăn chặn tương tác khi ẩn */
+        }
+        #main-content-wrapper.active {
+            opacity: 1;
+            pointer-events: auto; /* Cho phép tương tác khi hiển thị */
+        }
+
+        /* Thanh điều hướng (Navigation Bar) - Glassmorphism */
+        .navbar {
+            background-color: rgba(26, 26, 26, 0.6); /* Nền đen trong suốt cho navbar */
+            backdrop-filter: blur(10px); /* Hiệu ứng kính mờ */
+            -webkit-backdrop-filter: blur(10px); /* Hỗ trợ Safari */
+            border-bottom: 2px solid rgba(255, 119, 233, 0.3); /* Viền dày hơn, màu glow */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Bóng đổ mạnh hơn */
+            transition: background-color 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out, border-color 0.3s ease-in-out;
+        }
+        /* Hiệu ứng kính mờ khi cuộn */
+        .navbar.scrolled {
+            background-color: rgba(10, 10, 10, 0.8); /* Nền đen đậm hơn trong suốt */
+            backdrop-filter: blur(15px); /* Hiệu ứng làm mờ mạnh hơn */
+            -webkit-backdrop-filter: blur(15px); /* Hỗ trợ Safari */
+            border-bottom-color: var(--neon-pink-bold); /* Viền đậm hơn khi cuộn */
+        }
+        .navbar a {
+            position: relative; /* Để dùng cho hiệu ứng gạch chân động */
+            color: var(--stardust-silver); /* Màu chữ Bạc Ánh Bụi Sao */
+            font-weight: 600; /* Độ đậm hơn */
+            transition: all 0.3s ease-in-out; /* Hiệu ứng chuyển động mượt mà */
+            border-radius: 0.5rem; /* Bo tròn góc */
+            padding: 0.5rem 0.75rem; /* Điều chỉnh padding */
+            overflow: hidden; /* Ẩn phần gạch chân khi chưa hover */
+        }
+        .navbar a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px; /* Độ dày gạch chân */
+            background: var(--main-gradient); /* Gradient màu hồng tím cho gạch chân */
+            transform: scaleX(0); /* Ban đầu ẩn gạch chân */
+            transform-origin: bottom right; /* Điểm bắt đầu hiệu ứng */
+            transition: transform 0.3s ease-out; /* Hiệu ứng hiển thị gạch chân */
+        }
+        .navbar a:hover {
+            color: var(--neon-pink-bold); /* Màu hồng đậm hơn khi hover */
+            background-color: rgba(255, 60, 172, 0.1); /* Nền hồng nhạt trong suốt khi hover */
+            text-shadow: 0 0 5px var(--glow-pink-pastel); /* Glow nhẹ cho chữ */
+        }
+        .navbar a:hover::after {
+            transform: scaleX(1); /* Hiển thị gạch chân khi hover */
+            transform-origin: bottom left; /* Điểm kết thúc hiệu ứng */
+        }
+        /* Active nav link styling */
+        .navbar a.active-link {
+            color: var(--neon-pink-bold); /* Màu hồng đậm hơn khi active */
+            background-color: rgba(255, 60, 172, 0.15); /* Nền hồng nhạt trong suốt khi active */
+            box-shadow: 0 0 8px rgba(255, 119, 233, 0.3); /* Bóng đổ nhẹ với glow */
+        }
+        .navbar a.active-link::after {
+            transform: scaleX(1); /* Luôn hiển thị gạch chân khi active */
+            transform-origin: bottom left;
+        }
+
+        /* Logo Styling */
+        .navbar .logo-container {
+            display: flex; /* Ensure flex for alignment */
+            align-items: center;
+            text-decoration: none;
+            transition: all 0.4s ease-in-out; /* Apply transition to container */
+        }
+
+        .navbar .logo-container .main-logo-svg {
+            transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
+            animation: logoFloatGlow 3s infinite alternate ease-in-out;
+            transform-origin: center center;
+        }
+        /* New: Dynamic logo text size and color on scroll */
+        .navbar.scrolled .main-logo-svg text {
+            transform: scale(0.85); /* Shrink text slightly */
+            fill: var(--metallic-pink); /* Change color slightly */
+            transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
+        }
+
+
+        .navbar .logo-container:hover .main-logo-svg {
+            transform: scale(1.05) rotate(2deg) translateY(-2px); /* Subtle zoom, rotate, lift */
+            filter: drop-shadow(0 0 20px var(--neon-pink-bold)); /* Stronger glow */
+        }
+
+        @keyframes logoFloatGlow {
+            0% { transform: translateY(0); filter: drop-shadow(0 0 5px rgba(255, 60, 172, 0.4)); }
+            50% { transform: translateY(-5px); filter: drop-shadow(0 0 12px rgba(255, 60, 172, 0.7)); }
+            100% { transform: translateY(0); filter: drop-shadow(0 0 5px rgba(255, 60, 172, 0.4)); }
+        }
+
+        /* Hero Section - Phần giới thiệu đầu trang */
+        .hero-section {
+            position: relative;
+            color: var(--jade-white); /* Màu chữ trắng ngọc */
+            padding: 6rem 1rem;
+            border-radius: 1.5rem;
+            margin-bottom: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 80vh; /* Chiều cao tối thiểu */
+            overflow: hidden; /* Ẩn các phần tràn ra */
+        }
+
+        /* Video Background - Video nền cho Hero Section */
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Đảm bảo video phủ kín */
+            z-index: 1; /* Đặt dưới các lớp khác */
+        }
+
+        /* Overlay for readability - Lớp phủ để chữ dễ đọc hơn */
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Lớp phủ đen trong suốt */
+            /* Thêm radial gradient để tạo điểm nhấn ở giữa */
+            background-image: radial-gradient(circle at center, rgba(255, 60, 172, 0.2), rgba(120, 75, 160, 0.2), rgba(0,0,0,0.7));
+            z-index: 2; /* Đặt trên video */
+        }
+
+        /* Animated Grid Overlay - Lớp phủ lưới động trên Hero Section */
+        .grid-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(0deg, transparent 24%, rgba(255, 60, 172, .05) 25%, rgba(255, 60, 172, .05) 26%, transparent 27%, transparent 74%, rgba(255, 60, 172, .05) 75%, rgba(255, 60, 172, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 60, 172, .05) 25%, rgba(255, 60, 172, .05) 26%, transparent 27%, transparent 74%, rgba(255, 60, 172, .05) 75%, rgba(255, 60, 172, .05) 76%, transparent 77%, transparent);
+            background-size: 50px 50px;
+            animation: gridPan 20s linear infinite; /* Hiệu ứng pan lưới */
+            z-index: 3; /* Đặt trên overlay, dưới particles */
+            opacity: 0.3;
+        }
+        @keyframes gridPan {
+            from { background-position: 0 0; }
+            to { background-position: 50px 50px; }
+        }
+
+
+        /* Particles.js container - Container cho hiệu ứng hạt */
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 4; /* Đặt trên grid overlay, dưới nội dung hero */
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 5; /* Đảm bảo nội dung hiển thị trên particles */
+        }
+
+        /* Responsive adjustments for Hero Content */
+        @media (min-width: 768px) {
+            .hero-content {
+                flex-direction: row;
+                text-align: left;
+                justify-content: space-around;
+            }
+            .hero-content .text-content {
+                max-width: 50%;
+            }
+            .hero-content .image-content {
+                order: 2; /* Đặt ảnh bên phải trên desktop */
+            }
+             .hero-content .text-content {
+                order: 1; /* Đặt chữ bên trái trên desktop */
+            }
+        }
+        /* Mobile specific adjustments for Hero Content */
+        @media (max-width: 767px) {
+            .hero-section {
+                padding: 4rem 1rem; /* Adjust padding for smaller screens */
+                min-height: 90vh; /* More height for mobile */
+            }
+            .hero-content {
+                flex-direction: column; /* Stack vertically on mobile */
+                text-align: center; /* Center text on mobile */
+                gap: 1.5rem; /* Smaller gap */
+            }
+            .hero-content .image-content {
+                order: 1; /* Image on top */
+            }
+            .hero-content .text-content {
+                order: 2; /* Text below image */
+                max-width: 90%; /* Allow text to take more width */
+            }
+            #hero-headline {
+                font-size: 2.25rem; /* Smaller font size for mobile headline */
+            }
+            .hero-section p {
+                font-size: 1rem; /* Smaller font size for mobile paragraphs */
+            }
+            /* Ensure image scales down on very small screens */
+            .hero-section img {
+                width: 150px; /* Smaller width for very small screens */
+                height: 150px;
+            }
+        }
+
+
+        /* Hero Image - Ảnh đại diện trong Hero Section với hiệu ứng lơ lửng và phát sáng nhẹ */
+        .hero-section img {
+            border: 8px solid var(--neon-pink-bold); /* Viền hồng dày */
+            box-shadow: var(--queen-border-glow); /* Sử dụng border glow mới */
+            transition: transform 0.4s ease-in-out; /* Hiệu ứng chuyển động mượt mà */
+            width: 180px;
+            height: 180px;
+            object-fit: cover; /* Đảm bảo ảnh hiển thị đầy đủ */
+            object-position: center;
+            animation: heroImageFloat 4s infinite ease-in-out alternate, heroImageGlow 2s infinite alternate; /* Hiệu ứng lơ lửng và phát sáng liên tục */
+        }
+        .hero-section img:hover {
+            transform: scale(1.08) rotate(3deg); /* Phóng to và xoay nhẹ khi hover */
+        }
+        @keyframes heroImageFloat {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+        @keyframes heroImageGlow {
+            0% { box-shadow: 0 0 10px var(--glow-pink-pastel); }
+            100% { box-shadow: 0 0 25px var(--glow-pink-pastel), 0 0 40px rgba(255, 119, 233, 0.5); }
+        }
+
+        /* Hero Headline - Tên "PHAN THANH VÂN" */
+        #hero-headline {
+            color: var(--neon-pink-bold); /* Màu Hồng Neon Gắt */
+            @apply hero-headline-glow; /* Sử dụng lớp tiện ích mới cho glow */
+            font-weight: 900; /* Rất đậm */
+            background: var(--queen-text-gradient-1); /* Áp dụng text gradient mới */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        /* Hero Tagline - Tagline bên dưới */
+        .hero-section p.text-xl, .hero-section p.text-lg {
+            color: var(--metallic-pink); /* Màu Hồng Ánh Kim */
+            font-style: italic;
+            opacity: 0.85;
+        }
+
+        /* Hero Button - Nút "Tìm hiểu thêm" */
+        .hero-button {
+            @apply btn-glow; /* Sử dụng lớp tiện ích mới */
+        }
+
+        /* Animations for Hero Content Text & Button - Hiệu ứng xuất hiện cho chữ và nút */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            opacity: 0; /* Trạng thái ban đầu ẩn */
+            animation: fadeInUp 0.8s ease-out forwards; /* Hiệu ứng mờ dần và trượt lên */
+        }
+        .animate-fade-in-up-1 { animation-delay: 0.3s; } /* Độ trễ cho từng phần tử */
+        .animate-fade-in-up-2 { animation-delay: 0.6s; }
+        .animate-fade-in-up-3 { animation-delay: 0.9s; }
+        .animate-fade-in-up-4 { animation-delay: 1.2s; }
+
+        /* Scroll Down Indicator - Chỉ báo cuộn xuống */
+        .scroll-down-indicator {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--neon-pink-bold); /* Màu hồng cho chỉ báo */
+            font-size: 0.9rem;
+            opacity: 0.8;
+            animation: bounce 2s infinite; /* Hiệu ứng nảy liên tục */
+            z-index: 10;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.5); /* Bóng chữ */
+            transition: opacity 0.5s ease-out; /* Fade out on scroll */
+        }
+        .scroll-down-indicator.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+        .scroll-down-indicator svg {
+            width: 24px;
+            height: 24px;
+            margin-top: 0.5rem;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        /* Container cho các section nội dung - Glassmorphism + Neobrutalism */
+        .section-container {
+            @apply card-glass; /* Sử dụng lớp tiện ích mới */
+            max-width: 1024px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2rem; /* Điều chỉnh padding cho mobile */
+            border-radius: 1.5rem; /* Bo tròn góc */
+            margin-bottom: 3.5rem;
+            opacity: 0; /* Ban đầu ẩn */
+            transform: translateY(50px); /* Dịch xuống dưới */
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out, box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Hiệu ứng xuất hiện và hover */
+            position: relative; /* For background animation */
+            overflow: hidden; /* Hide overflow from background animation */
+        }
+        /* New: Subtle background animation for sections (particle/star field) */
+        .section-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(255, 60, 172, 0.03) 0%, transparent 70%);
+            animation: sectionBgPulse 15s infinite alternate ease-in-out;
+            z-index: 0;
+            opacity: 0.5;
+            pointer-events: none; /* Ensure it doesn't block content */
+        }
+        @keyframes sectionBgPulse {
+            0% { transform: scale(1) rotate(0deg); opacity: 0.5; }
+            50% { transform: scale(1.1) rotate(5deg); opacity: 0.6; }
+            100% { transform: scale(1) rotate(0deg); opacity: 0.5; }
+        }
+
+
+        /* Padding lớn hơn cho desktop */
+        @media (min-width: 768px) {
+            .section-container {
+                padding: 3.5rem;
+            }
+        }
+        .section-container.is-visible {
+            opacity: 1; /* Hiển thị khi cuộn tới */
+            transform: translateY(0); /* Trượt lên vị trí ban đầu */
+        }
+
+        /* Tiêu đề section - Section titles với hiệu ứng gradient text */
+        .section-title {
+            color: var(--neon-pink-bold); /* Màu hồng chủ đạo */
+            font-size: 2.5rem; /* Điều chỉnh font size cho mobile */
+            font-weight: 800; /* Rất đậm */
+            margin-bottom: 2.5rem;
+            position: relative;
+            letter-spacing: -0.025em; /* Khoảng cách chữ hẹp hơn */
+            /* Gradient Text Effect */
+            background: var(--main-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            transition: all 0.5s ease-in-out; /* Thêm transition cho hiệu ứng hover */
+        }
+        /* Font size lớn hơn cho desktop */
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 3rem;
+            }
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 5px;
+            background: var(--main-gradient); /* Gradient hồng tím */
+            margin: 1rem auto 0;
+            border-radius: 9999px; /* Bo tròn hoàn toàn */
+            transition: width 0.3s ease-out; /* Hiệu ứng mở rộng gạch chân */
+        }
+        .section-title:hover::after {
+            width: 120px; /* Mở rộng gạch chân khi hover */
+        }
+        /* Animation for section titles when visible */
+        .section-title.animated-title {
+            animation: textGlow 1.5s ease-in-out infinite alternate;
+        }
+        @keyframes textGlow {
+            0% { text-shadow: 0 0 5px rgba(255, 60, 172, 0.3); }
+            100% { text-shadow: 0 0 15px rgba(255, 60, 172, 0.7), 0 0 25px rgba(255, 60, 172, 0.5); }
+        }
+
+
+        /* Hover effect cho các mục trong sở thích (Hobby Items) - Glassmorphism + Neobrutalism */
+        .hobby-item {
+            background-color: rgba(26, 26, 26, 0.4); /* Nền trong suốt */
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 2px solid rgba(255, 119, 233, 0.3); /* Viền dày hơn, glow */
+            transition: all 0.4s ease-in-out; /* Tăng thời gian chuyển động */
+            cursor: pointer;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Bóng đổ nhẹ hơn */
+            color: var(--stardust-silver); /* Màu chữ cho hobby items */
+        }
+        .hobby-item:hover {
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6), 0 0 20px var(--glow-pink-pastel); /* Bóng đổ mạnh hơn và glow */
+            background: rgba(10, 10, 10, 0.6); /* Nền đậm hơn khi hover */
+            border-color: var(--neon-pink-bold); /* Viền hồng khi hover */
+        }
+        .hobby-item span {
+            color: var(--neon-pink-bold); /* Màu hồng cho icon */
+            transition: transform 0.3s ease-in-out;
+        }
+        .hobby-item:hover span {
+            transform: scale(1.2) rotate(5deg); /* Bounce and rotate icon */
+        }
+
+
+        /* Kỷ niệm và Hình ảnh (Memory Cards) - Glassmorphism + Neobrutalism */
+        .memory-card {
+            background-color: rgba(26, 26, 26, 0.4);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 2px solid rgba(255, 119, 233, 0.3);
+            transition: all 0.4s ease-in-out; /* Tăng thời gian chuyển động */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Bóng đổ nhẹ hơn */
+            color: var(--stardust-silver); /* Màu chữ cho memory cards */
+        }
+        .memory-card:hover {
+            box-shadow: var(--queen-border-glow); /* Sử dụng border glow mới */
+            transform: translateY(-8px) scale(1.01) rotate(1deg); /* Nhấc lên cao hơn, phóng to nhẹ và xoay nhẹ */
+            border-color: var(--neon-pink-bold); /* Viền hồng khi hover */
+        }
+        .memory-card img {
+            border-radius: 0.75rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            object-position: center;
+        }
+        .memory-card p.font-semibold {
+            color: var(--neon-pink-bold); /* Màu hồng cho tiêu đề nhỏ trong memory card */
+        }
+
+        /* Thư viện ảnh (Gallery) - Glassmorphism */
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 0.75rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease-in-out; /* Thêm transition cho toàn bộ item */
+            background-color: rgba(26, 26, 26, 0.4);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 2px solid rgba(255, 119, 233, 0.3);
+        }
+        .gallery-item:hover {
+            box-shadow: var(--queen-border-glow); /* Sử dụng border glow mới */
+            transform: translateY(-5px); /* Nâng nhẹ lên */
+        }
+        .gallery-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 0.75rem;
+            transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
+        }
+        .gallery-item:hover .gallery-img {
+            transform: scale(1.15); /* Phóng to nhiều hơn */
+            filter: brightness(0.7); /* Làm tối nhiều hơn để chú thích nổi bật */
+        }
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: var(--jade-white);
+            padding: 0.75rem;
+            text-align: center;
+            font-size: 0.9rem;
+            opacity: 0;
+            transform: translateY(100%);
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+            border-bottom-left-radius: 0.75rem;
+            border-bottom-right-radius: 0.75rem;
+        }
+        .gallery-item:hover .gallery-caption {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* New: Placeholder for lazy loaded images */
+        .gallery-item .image-placeholder {
+            background-color: var(--stage-grey); /* Placeholder background */
+            color: var(--neon-pink-bold);
+        }
+
+
+        /* Modal cho lightbox - Hiển thị ảnh lớn khi click */
+        .modal {
+            display: none; /* Ban đầu ẩn */
+            position: fixed;
+            z-index: 100; /* Đảm bảo hiển thị trên cùng */
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.95); /* Nền đen trong suốt đậm hơn */
+            animation: fadeInModal 0.3s; /* Hiệu ứng mờ dần khi xuất hiện */
+        }
+        @keyframes fadeInModal {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 90%; /* Tăng chiều rộng trên mobile */
+            max-width: 700px;
+            border-radius: 1rem;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.7);
+            animation: zoomIn 0.3s; /* Hiệu ứng phóng to khi xuất hiện */
+        }
+        @media (min-width: 768px) {
+            .modal-content {
+                width: 80%; /* Giảm chiều rộng trên desktop */
+            }
+        }
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0.8; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .modal-caption {
+            margin: auto;
+            display: block;
+            width: 90%; /* Tăng chiều rộng trên mobile */
+            max-width: 700px;
+            text-align: center;
+            color: var(--stardust-silver);
+            padding: 10px 0;
+            height: 150px;
+        }
+        @media (min-width: 768px) {
+            .modal-caption {
+                width: 80%; /* Giảm chiều rộng trên desktop */
+            }
+        }
+
+        /* Nút điều hướng trong Lightbox */
+        .modal-nav-button {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: var(--jade-white);
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+            background-color: rgba(0,0,0,0.6);
+        }
+        .modal-nav-button.prev {
+            left: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .modal-nav-button.next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .modal-nav-button:hover {
+            background-color: rgba(0,0,0,0.9);
+        }
+
+
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: var(--stardust-silver);
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .close-modal:hover,
+        .close-modal:focus {
+            color: var(--neon-pink-bold);
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Testimonials Carousel - Hiệu ứng trượt lời chứng thực - Glassmorphism + Neobrutalism */
+        .testimonial-carousel {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            margin: 0 auto;
+            padding: 1rem 0;
+        }
+
+        .testimonial-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out; /* Hiệu ứng trượt mượt mà */
+        }
+
+        .testimonial-item {
+            min-width: 100%;
+            box-sizing: border-box;
+            padding: 2rem;
+            text-align: center;
+            background-color: rgba(26, 26, 26, 0.4);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 2px solid rgba(255, 119, 233, 0.3);
+            border-radius: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--stardust-silver);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for tilt */
+            transform-style: preserve-3d; /* Enable 3D transforms */
+        }
+        .testimonial-item:hover {
+            transform: rotateY(5deg) scale(1.02); /* Subtle tilt and zoom on hover */
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), 0 0 15px var(--glow-pink-pastel); /* Stronger shadow and glow */
+        }
+
+
+        .testimonial-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 3px solid var(--neon-pink-bold); /* Viền hồng */
+        }
+
+        .testimonial-item p {
+            font-style: italic;
+            color: var(--stardust-silver);
+            margin-bottom: 1rem;
+            font-size: 1.125rem;
+        }
+
+        .testimonial-item .author {
+            font-weight: 600;
+            color: var(--neon-pink-bold);
+            font-size: 1rem;
+        }
+
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;
+            gap: 0.75rem;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--stage-grey);
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .dot.active {
+            background-color: var(--neon-pink-bold); /* Màu hồng khi active */
+        }
+
+        /* Add carousel navigation arrows */
+        .carousel-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: var(--jade-white);
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.5rem;
+            z-index: 10;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .carousel-arrow:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .carousel-arrow.left {
+            left: 10px;
+        }
+
+        .carousel-arrow.right {
+            right: 10px;
+        }
+
+        /* Liên hệ (Contact Section) */
+        .contact-link {
+            transition: all 0.3s ease-in-out;
+            font-weight: 600;
+            color: var(--stardust-silver); /* Màu chữ mặc định */
+        }
+        .contact-link:hover {
+            transform: translateY(-8px) scale(1.05); /* Nhấc lên và phóng to nhẹ */
+            color: var(--neon-pink-bold); /* Màu hồng đậm hơn khi hover */
+            filter: drop-shadow(0 0 15px rgba(255, 119, 233, 0.8)); /* Phát sáng mạnh hơn khi hover */
+        }
+        .contact-link svg {
+            color: var(--neon-pink-bold); /* Icon màu hồng */
+            animation: pulse 1.5s infinite; /* Hiệu ứng nhấp nháy nhẹ */
+        }
+        .contact-link span {
+            transition: text-shadow 0.3s ease-in-out;
+        }
+        .contact-link:hover span {
+            text-shadow: 0 0 8px var(--neon-pink-bold); /* Glow effect on text */
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        /* Clipboard message */
+        .clipboard-message {
+            position: fixed;
+            bottom: 80px; /* Above the back to top button */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(255, 105, 180, 0.9); /* Primary pink with transparency */
+            color: var(--jade-white);
+            padding: 12px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+            z-index: 1000;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+        .clipboard-message.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        /* Footer */
+        footer {
+            background-color: var(--black-universe); /* Nền footer đen sâu hơn */
+            color: var(--stardust-silver); /* Chữ xám nhạt */
+            padding: 2.5rem;
+            border-top-left-radius: 1.5rem;
+            border-top-right-radius: 1.5rem;
+            box-shadow: 0 -6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Social Icons in Footer */
+        .social-icon-link {
+            transition: all 0.3s ease-in-out;
+        }
+        .social-icon-link:hover .social-icon-svg {
+            transform: scale(1.2) rotate(10deg); /* Phóng to và xoay nhẹ */
+            color: var(--neon-pink-bold); /* Màu hồng khi hover */
+            filter: drop-shadow(0 0 8px rgba(255, 119, 233, 0.7)); /* Phát sáng */
+            animation: socialIconBounce 0.5s ease-in-out; /* New: Bounce animation */
+        }
+        .social-icon-svg {
+            transition: all 0.3s ease-in-out;
+        }
+        @keyframes socialIconBounce {
+            0%, 100% { transform: scale(1.2) rotate(10deg); }
+            50% { transform: scale(1.3) rotate(15deg); }
+        }
+
+
+        /* Back to Top Button - Nút cuộn lên đầu trang */
+        #backToTopBtn {
+            display: none; /* Ban đầu ẩn */
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: var(--neon-pink-bold); /* Nền hồng */
+            color: var(--jade-white);
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%; /* Hình tròn */
+            font-size: 18px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: background-color 0.3s, transform 0.3s, opacity 0.5s; /* Hiệu ứng chuyển động */
+            opacity: 0; /* Ban đầu ẩn */
+        }
+
+        #backToTopBtn.show {
+            opacity: 1; /* Hiển thị khi có class 'show' */
+            transform: translateY(0); /* Reset transform for smooth entry */
+        }
+
+        #backToTopBtn:hover {
+            background-color: var(--fiery-pink); /* Màu hồng đậm hơn khi hover */
+            transform: translateY(-8px) scale(1.1); /* Nhấc lên mạnh hơn và phóng to */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4), 0 0 15px var(--glow-pink-pastel); /* Thêm glow */
+        }
+
+        /* Mobile menu specific styles - Menu trên thiết bị di động */
+        .mobile-menu {
+            display: none; /* Ban đầu ẩn */
+            flex-direction: column;
+            background-color: var(--black-universe);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            border-radius: 0.5rem;
+            overflow: hidden;
+            animation: slideDown 0.3s ease-out; /* Hiệu ứng trượt xuống */
+        }
+        .mobile-menu.open {
+            display: flex; /* Hiển thị khi có class 'open' */
+        }
+        .mobile-menu a {
+            padding: 1rem 1.5rem;
+            color: var(--stardust-silver);
+            text-align: left;
+            border-bottom: 1px solid var(--stage-grey);
+        }
+        .mobile-menu a:last-child {
+            border-bottom: none;
+        }
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Ripple effect for touch on hero section */
+        .ripple-effect {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 60, 172, 0.7); /* Pink ripple */
+            animation: ripple-animation 1.5s forwards; /* Increased duration for more spread */
+            pointer-events: none; /* Ensure it doesn't block underlying elements */
+            transform: scale(0);
+            opacity: 1;
+        }
+
+        @keyframes ripple-animation {
+            to {
+                transform: scale(4); /* Increased scale for wider spread */
+                opacity: 0;
+            }
+        }
+
+        /* Custom Cursor Trail */
+        .cursor-trail {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            background-color: var(--neon-pink-bold);
+            border-radius: 50%;
+            pointer-events: none;
+            opacity: 0;
+            transform: translate(-50%, -50%);
+            transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+            z-index: 10000;
+            filter: blur(2px); /* Subtle blur for glow effect */
+        }
+        /* Hide cursor trail on mobile */
+        @media (max-width: 767px) {
+            .cursor-trail {
+                display: none;
+            }
+        }
+
+        /* Sticky Social Media Sidebar (Section Navigation Bar phụ) */
+        .social-sidebar {
+            position: fixed;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem 0.5rem;
+            background-color: rgba(26, 26, 26, 0.8);
+            border-radius: 0 1rem 1rem 0;
+            box-shadow: 4px 0 15px rgba(0,0,0,0.3);
+            z-index: 40; /* Below navbar, above main content */
+            transition: all 0.3s ease-in-out;
+            opacity: 0; /* Initially hidden */
+            transform: translateX(-100%) translateY(-50%); /* Slide in from left */
+        }
+        .social-sidebar.show {
+            opacity: 1;
+            transform: translateX(0) translateY(-50%);
+        }
+        .social-sidebar a {
+            color: var(--stardust-silver);
+            font-size: 1.8rem;
+            transition: all 0.3s ease-in-out;
+            padding: 0.5rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .social-sidebar a:hover {
+            color: var(--neon-pink-bold);
+            background-color: rgba(255, 60, 172, 0.1);
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 8px rgba(255, 119, 233, 0.7));
+            animation: socialIconBounce 0.5s ease-in-out; /* New: Bounce animation */
+        }
+        /* Hide on mobile */
+        @media (max-width: 767px) {
+            .social-sidebar {
+                display: none;
+            }
+        }
+
+        /* Scroll Progress Bar */
+        #scroll-progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 5px;
+            background: var(--main-gradient);
+            width: 0%;
+            z-index: 100;
+            transition: width 0.1s linear;
+        }
+
+        /* Floating Action Button (FAB) */
+        #fab-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column-reverse; /* Stack items from bottom up */
+            align-items: flex-end;
+            gap: 10px;
+        }
+        #fab-main-button {
+            background: var(--main-gradient);
+            color: var(--jade-white);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.8rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        #fab-main-button:hover {
+            transform: scale(1.1) rotate(90deg);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+        }
+        #fab-options {
+            display: none; /* Hidden by default */
+            flex-direction: column;
+            gap: 8px;
+            padding: 10px;
+            background-color: rgba(26, 26, 26, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+        }
+        #fab-options.show {
+            display: flex;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        #fab-options a {
+            background-color: var(--stage-grey);
+            color: var(--stardust-silver);
+            padding: 10px 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s ease-in-out;
+        }
+        #fab-options a:hover {
+            background-color: var(--neon-pink-bold);
+            transform: translateX(-5px);
+        }
+        #fab-options a svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Section Navigation Bar phụ (Vertical Sidebar) */
+        .section-nav-sidebar {
+            position: fixed;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            display: none; /* Hidden by default, show on desktop */
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem 0.5rem;
+            background-color: rgba(26, 26, 26, 0.8);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-radius: 0 1rem 1rem 0;
+            box-shadow: 4px 0 15px rgba(0,0,0,0.3);
+            z-index: 45; /* Above social sidebar, below navbar */
+            transition: all 0.3s ease-in-out;
+            opacity: 0;
+            transform: translateX(-100%) translateY(-50%);
+        }
+
+        .section-nav-sidebar.show {
+            opacity: 1;
+            transform: translateX(0) translateY(-50%);
+        }
+
+        .section-nav-sidebar a {
+            color: var(--stardust-silver);
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 0.75rem 0.5rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-nav-sidebar a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--main-gradient);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease-out;
+            z-index: -1;
+            border-radius: 0.5rem;
+        }
+
+        .section-nav-sidebar a:hover {
+            color: var(--jade-white);
+            text-shadow: 0 0 8px var(--glow-pink-pastel);
+        }
+
+        .section-nav-sidebar a:hover::before {
+            transform: scaleX(1);
+        }
+
+        .section-nav-sidebar a.active-link {
+            color: var(--jade-white);
+            background: var(--main-gradient);
+            box-shadow: 0 0 10px var(--glow-pink-pastel);
+            text-shadow: 0 0 8px var(--glow-pink-pastel);
+        }
+        .section-nav-sidebar a.active-link::before {
+            transform: scaleX(1);
+        }
+
+        @media (min-width: 1024px) { /* Show on large screens and up */
+            .section-nav-sidebar {
+                display: flex;
+            }
+        }
+
+        /* Dark Mode Toggle Switch */
+        #theme-toggle {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+        #theme-toggle .toggle-circle {
+            background-color: var(--jade-white);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        html.dark #theme-toggle {
+            background-color: rgba(0, 0, 0, 0.4);
+            border-color: rgba(0, 0, 0, 0.6);
+        }
+        html.dark #theme-toggle .toggle-circle {
+            transform: translateX(100%);
+            background-color: var(--black-universe);
+        }
+
+        /* Live Counter Styling */
+        .counter-box {
+            background-color: rgba(26, 26, 26, 0.4);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 2px solid rgba(255, 119, 233, 0.3);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            color: var(--stardust-silver);
+        }
+        .counter-value {
+            color: var(--neon-pink-bold);
+            text-shadow: 0 0 10px var(--glow-pink-pastel);
+        }
+
+        /* Real-time Clock Styling */
+        #real-time-clock {
+            color: var(--metallic-pink);
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 1rem;
+        }
+        @media (min-width: 768px) {
+            #real-time-clock {
+                text-align: right;
+                margin-top: 0;
+            }
+        }
+    </style>
+    <!-- Tone.js for subtle sound effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.min.js"></script>
+    <!-- CountUp.js for live counters -->
+    <script src="https://unpkg.com/countup.js@2.8.0/dist/countUp.min.js"></script>
+</head>
+<body class="flex flex-col min-h-screen overflow-hidden">
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress-bar"></div>
+
+    <!-- Cutscene Overlay -->
+    <div id="cutscene-overlay" class="fixed inset-0 bg-black flex flex-col justify-center items-center z-[10000] opacity-1">
+        <img id="cutscene-bg-image" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1500 ease-in-out transform scale-108" alt="Background Image">
+        <div class="cutscene-content relative z-10 text-center text-white">
+            <div id="cutscene-preloader" class="spinner mb-8"></div>
+            <h2 id="cutscene-text" class="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-8 opacity-0 transition-opacity duration-1000 ease-in-out transform -translate-y-8"></h2>
+            <button id="enter-site-button" class="bg-white text-purple-700 px-8 py-4 rounded-full font-bold text-xl shadow-lg" aria-label="Khám phá trang web">
+                Khám phá ngay!
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Content Wrapper - Initially hidden -->
+    <div id="main-content-wrapper" class="opacity-0 transition-opacity duration-1000">
+        <!-- Sticky Social Media Sidebar -->
+        <div class="social-sidebar" id="social-sidebar">
+            <a href="https://www.facebook.com/phan.thanh.van.839386?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Liên kết Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.tiktok.com/@vanvanvaychacgi?_t=ZS-8uyzsQBHdlg&_r=1" target="_blank" rel="noopener noreferrer" title="TikTok" aria-label="Liên kết TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.youtube.com/@thanhvanphan-un4nl" target="_blank" rel="noopener noreferrer" title="YouTube" aria-label="Liên kết YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+
+        <!-- Section Navigation Bar phụ (Vertical Sidebar) -->
+        <div class="section-nav-sidebar" id="section-nav-sidebar">
+            <a href="#gioi-thieu" aria-label="Đi đến phần Giới thiệu">Giới thiệu</a>
+            <a href="#thanh-tich" aria-label="Đi đến phần Thành tích">Thành tích</a>
+            <a href="#ky-niem" aria-label="Đi đến phần Kỷ niệm">Kỷ niệm</a>
+            <a href="#testimonials" aria-label="Đi đến phần Lời chứng thực">Lời chứng thực</a>
+            <a href="#thu-vien-anh" aria-label="Đi đến phần Thư viện ảnh">Thư viện ảnh</a>
+            <a href="#lien-he" aria-label="Đi đến phần Liên hệ">Liên hệ</a>
+        </div>
+
+        <!-- Thanh điều hướng (Navigation Bar) -->
+        <nav class="navbar p-4 sticky top-0 z-50" id="navbar" role="navigation">
+            <div class="max-w-4xl mx-auto flex justify-between items-center relative">
+                <a href="#trang-chu" class="logo-container flex items-center" aria-label="Trang chủ Phan Thanh Vân">
+                    <svg width="250" height="60" viewBox="0 0 250 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="main-logo-svg">
+                        <defs>
+                            <!-- Gradient for the text itself -->
+                            <linearGradient id="textGradientLogo" x1="0" y1="0" x2="100%" y2="0">
+                                <stop offset="0%" stop-color="var(--neon-pink-bold)" />
+                                <stop offset="100%" stop-color="var(--gradient-purple-main)" />
+                            </linearGradient>
+                            <!-- Filter for glow effect on text -->
+                            <filter id="textGlowLogo">
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
+                                <feFlood flood-color="var(--neon-pink-bold)" flood-opacity="0.6" result="flood" />
+                                <feComposite in="flood" in2="blur" operator="in" result="glow" />
+                                <feMerge>
+                                    <feMergeNode in="glow" />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <!-- Microphone head shape (more solid) -->
+                        <path d="M30 5C16.19 5 5 16.19 5 30s11.19 25 25 25 25-11.19 25-25S43.81 5 30 5z" fill="var(--black-universe)" />
+                        <!-- Microphone body shape (more solid) -->
+                        <path d="M50 25H240C245.52 25 250 29.48 250 35V35C250 40.52 245.52 45 240 45H50V25Z" fill="var(--stage-grey)" />
+                        <!-- Text "Phan Thanh Vân" positioned over the microphone body -->
+                        <text x="145" y="35" dominant-baseline="middle" text-anchor="middle" font-family="Inter, sans-serif" font-size="24" font-weight="bold" fill="url(#textGradientLogo)" style="filter: url(#textGlowLogo);">
+                            Phan Thanh Vân
+                        </text>
+                    </svg>
+                </a>
+                <!-- Menu trên desktop -->
+                <div class="space-x-4 hidden md:flex" id="desktop-menu" role="menubar">
+                    <a href="#gioi-thieu" role="menuitem">Giới thiệu</a>
+                    <a href="#thanh-tich" role="menuitem">Thành tích</a>
+                    <a href="#ky-niem" role="menuitem">Kỷ niệm</a>
+                    <a href="#testimonials" role="menuitem">Lời chứng thực</a>
+                    <a href="#thu-vien-anh" role="menuitem">Thư viện ảnh</a>
+                    <a href="#lien-he" role="menuitem">Liên hệ</a>
+                </div>
+                <!-- Dark Mode Toggle Switch -->
+                <button id="theme-toggle" class="relative w-14 h-8 flex items-center bg-gray-200 cursor-pointer rounded-full p-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 transition-colors duration-200" aria-label="Chuyển đổi chế độ sáng tối">
+                    <span class="sr-only">Toggle dark mode</span>
+                    <span class="toggle-circle w-6 h-6 bg-white rounded-full shadow-md transform transition-transform duration-200 flex items-center justify-center">
+                        <i class="fas fa-sun text-yellow-500 text-sm"></i>
+                    </span>
+                    <span class="absolute right-1 text-gray-700 text-sm"><i class="fas fa-moon"></i></span>
+                </button>
+                <!-- Nút menu cho mobile -->
+                <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button" aria-label="Mở menu di động" aria-expanded="false">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+
+                <!-- Mobile menu content -->
+                <div class="mobile-menu md:hidden" id="mobile-menu" role="menu">
+                    <a href="#gioi-thieu" role="menuitem">Giới thiệu</a>
+                    <a href="#thanh-tich" role="menuitem">Thành tích</a>
+                    <a href="#ky-niem" role="menuitem">Kỷ niệm</a>
+                    <a href="#testimonials" role="menuitem">Lời chứng thực</a>
+                    <a href="#thu-vien-anh" role="menuitem">Thư viện ảnh</a>
+                    <a href="#lien-he" role="menuitem">Liên hệ</a>
+                    <button id="mobile-theme-toggle" class="relative w-full h-12 flex items-center justify-center bg-gray-200 cursor-pointer rounded-b-lg p-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 transition-colors duration-200 mt-2" aria-label="Chuyển đổi chế độ sáng tối">
+                        <span class="sr-only">Toggle dark mode</span>
+                        <span class="toggle-circle w-6 h-6 bg-white rounded-full shadow-md transform transition-transform duration-200 flex items-center justify-center absolute left-2">
+                            <i class="fas fa-sun text-yellow-500 text-sm"></i>
+                        </span>
+                        <span class="absolute right-2 text-gray-700 text-sm"><i class="fas fa-moon"></i></span>
+                        <span class="text-gray-900 dark:text-gray-100 font-semibold ml-10">Chế độ sáng/tối</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Phần chính của trang -->
+        <main class="flex-grow p-4">
+            <!-- Phần Trang chủ/Hero Section -->
+            <section id="trang-chu" class="hero-section mx-auto" role="region" aria-label="Phần giới thiệu Phan Thanh Vân">
+                <!-- Video nền tự động phát, lặp lại và tắt tiếng -->
+                <video autoplay loop muted playsinline class="video-background" poster="https://i.postimg.cc/LJpyqvzt/671a83ef-26bd-418b-8dbd-faa2d9ce070b.jpg">
+                    <source src="https://assets.mixkit.co/videos/preview/mixkit-young-woman-singing-into-a-microphone-4375-large.mp4" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ thẻ video.
+                </video>
+                <!-- Lớp phủ lưới động -->
+                <div class="grid-overlay"></div>
+                <!-- Container cho hiệu ứng hạt Particles.js -->
+                <div id="particles-js" aria-hidden="true"></div>
+                <div class="hero-content">
+                    <div class="image-content">
+                        <!-- Ảnh đại diện của Phan Thanh Vân với hiệu ứng lơ lửng và phát sáng nhẹ -->
+                        <img src="https://i.postimg.cc/LJpyqvzt/671a83ef-26bd-418b-8dbd-faa2d9ce070b.jpg"
+                             alt="Ảnh đại diện của Phan Thanh Vân"
+                             class="rounded-full">
+                    </div>
+                    <div class="text-content text-center md:text-left">
+                        <!-- Tiêu đề chính với hiệu ứng gõ chữ -->
+                        <h1 id="hero-headline" class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight animate-fade-in-up animate-fade-in-up-1"></h1>
+                        <!-- Mô tả ngắn gọn với hiệu ứng xuất hiện -->
+                        <p class="text-xl md:text-2xl mb-6 animate-fade-in-up animate-fade-in-up-2">
+                            Hành trình theo đuổi ước mơ ca hát
+                        </p>
+                        <!-- Trích dẫn với hiệu ứng xuất hiện -->
+                        <p class="text-lg md:text-xl italic mb-8 animate-fade-in-up animate-fade-in-up-3">
+                            "Đam mê không chỉ là ước mơ mà là hành trình của sự nỗ lực và bền bỉ."
+                        </p>
+                        <!-- Nút "Tìm hiểu thêm" với hiệu ứng xuất hiện -->
+                        <a href="#gioi-thieu" class="hero-button animate-fade-in-up animate-fade-in-up-4" role="button">
+                            Tìm hiểu thêm về Vân
+                        </a>
+                    </div>
+                </div>
+                <!-- Chỉ báo cuộn xuống -->
+                <div class="scroll-down-indicator" aria-hidden="true">
+                    <span>Cuộn xuống</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                    </svg>
+                </div>
+            </section>
+
+            <!-- Giới thiệu chi tiết - Section này có hiệu ứng parallax và AOS -->
+            <section id="gioi-thieu" class="section-container text-left" data-speed="0.05" role="region" aria-labelledby="gioi-thieu-title">
+                <h3 id="gioi-thieu-title" class="section-title text-center">Giới thiệu chi tiết</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <img src="https://i.postimg.cc/Q9wmjq8W/e39621dc-90f9-414e-abab-cb4d53b27b75.jpg"
+                             alt="Phan Thanh Vân trong tà áo dài"
+                             class="rounded-lg shadow-lg w-full h-auto object-cover transform hover:scale-102 transition-transform duration-300">
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <p class="text-lg leading-relaxed mb-4">
+                            Phan Thanh Vân sinh ngày 04/12/2007, hiện đang là sinh viên ngành Thanh nhạc tại Trường Đại học Hạ Long.
+                            Từ nhỏ, Vân đã yêu thích ca hát và luôn mong muốn đứng trên sân khấu chuyên nghiệp.
+                            Tuy nhiên, trong suốt những năm học cấp 1 và cấp 2, cô không nhận được nhiều sự quan tâm hay giúp giúp từ thầy cô trong lĩnh vực âm nhạc. Sự rụt rè và tự ti về bản thân khiến cô dần thu mình lại, thậm chí có lúc tưởng chừng như phải từ bỏ niềm đam mê ấy.
+                        </p>
+                        <ul class="list-disc list-inside text-lg space-y-2 pl-4">
+                            <li><span class="font-semibold text-neon-pink-bold">Học vấn:</span> Sinh viên ngành Thanh nhạc, Trường Đại học Hạ Long.</li>
+                            <li><span class="font-semibold text-neon-pink-bold">Nghề nghiệp:</span> Nữ sinh đang theo đuổi ước mơ ca hát và trở thành giáo viên thanh nhạc.</li>
+                            <li><span class="font-semibold text-neon-pink-bold">Mục tiêu:</span> Trở thành một giáo viên thanh nhạc trong tương lai, tiếp tục trau dồi kỹ năng và phát triển sự nghiệp ca hát.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Live Counter / Fact động -->
+            <section id="live-facts" class="section-container text-center" data-aos="fade-up" data-aos-duration="1000" role="region" aria-labelledby="live-facts-title">
+                <h3 id="live-facts-title" class="section-title text-center">Những con số ấn tượng</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+                    <div class="counter-box p-6 rounded-xl shadow-md" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="text-5xl font-bold counter-value mb-2" id="years-active-counter">0</div>
+                        <p class="text-lg">Năm hoạt động nghệ thuật</p>
+                    </div>
+                    <div class="counter-box p-6 rounded-xl shadow-md" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="text-5xl font-bold counter-value mb-2" id="projects-counter">0</div>
+                        <p class="text-lg">Dự án đã tham gia</p>
+                    </div>
+                    <div class="counter-box p-6 rounded-xl shadow-md" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="text-5xl font-bold counter-value mb-2" id="awards-counter">0</div>
+                        <p class="text-lg">Giải thưởng đạt được</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sở thích - Section này có hiệu ứng parallax và AOS -->
+            <section id="so-thich" class="section-container text-left" data-speed="0.08" role="region" aria-labelledby="so-thich-title">
+                <h3 id="so-thich-title" class="section-title text-center">Sở thích và Đam mê</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-lg">
+                    <div class="flex flex-col items-center p-8 rounded-xl shadow-md hobby-item" data-aos="zoom-in" data-aos-duration="800">
+                        <span class="mb-4 text-5xl" aria-hidden="true">🎤</span>
+                        <p class="font-semibold text-2xl mb-2">Ca hát</p>
+                        <p class="text-center text-base">Niềm đam mê cháy bỏng từ khi còn nhỏ, là động lực lớn nhất của Vân.</p>
+                    </div>
+                    <div class="flex flex-col items-center p-8 rounded-xl shadow-md hobby-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+                        <span class="mb-4 text-5xl" aria-hidden="true">📚</span>
+                        <p class="font-semibold text-2xl mb-2">Học tập</p>
+                        <p class="text-center text-base">Nỗ lực học tập tại Trường THPT Bạch Đằng để đạt được mục tiêu.</p>
+                    </div>
+                    <div class="flex flex-col items-center p-8 rounded-xl shadow-md hobby-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                        <span class="mb-4 text-5xl" aria-hidden="true">🎭</span>
+                        <p class="font-semibold text-2xl mb-2">Biểu diễn</p>
+                        <p class="text-center text-base">Tích cực tham gia các hoạt động văn nghệ tại trường và địa phương.</p>
+                    </div>
+                    <div class="flex flex-col items-center p-8 rounded-xl shadow-md hobby-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
+                        <span class="mb-4 text-5xl" aria-hidden="true">📖</span>
+                        <p class="text-center text-base">Không ngừng trau dồi kỹ năng thanh nhạc để phát triển sự nghiệp.</p>
+                    </div>
+                    <div class="flex flex-col items-center p-8 rounded-xl shadow-md hobby-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+                        <span class="mb-4 text-5xl" aria-hidden="true">✈️</span>
+                        <p class="font-semibold text-2xl mb-2">Khám phá</p>
+                        <p class="text-center text-base">Mong muốn khám phá và học hỏi những điều mới mẻ trong cuộc sống.</p>
+                    </div>
+                    <div class="flex flex-col items-center p-8 rounded-xl shadow-md hobby-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="500">
+                        <span class="mb-4 text-5xl" aria-hidden="true">🧘♀️</span>
+                        <p class="text-center text-base">Giữ sự cân bằng giữa học tập, đam mê và cuộc sống cá nhân.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Thành tích - Section này có hiệu ứng parallax và AOS -->
+            <section id="thanh-tich" class="section-container text-left" data-speed="0.06" role="region" aria-labelledby="thanh-tich-title">
+                <h3 id="thanh-tich-title" class="section-title text-center">Các Thành tích Nổi bật</h3>
+                <div class="space-y-8">
+                    <div class="p-6 rounded-xl shadow-md memory-card" data-aos="fade-up" data-aos-duration="800">
+                        <p class="font-semibold text-xl mb-2">Giải khuyến khích môn Ngữ văn (Lớp 9)</p>
+                        <p class="text-lg leading-relaxed">
+                            Khi còn học lớp 9, Thanh Vân đã xuất sắc đạt giải khuyến khích trong cuộc thi môn Ngữ văn.
+                        </p>
+                    </div>
+                    <div class="p-6 rounded-xl shadow-md memory-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <p class="font-semibold text-xl mb-2">Điểm cao nhất kỳ thi vào lớp 10 THPT Bạch Đằng</p>
+                        <p class="text-lg leading-relaxed">
+                            Trong kỳ thi tuyển sinh vào lớp 10 Trường THPT Bạch Đằng, Vân đã đạt 8.5 điểm môn Văn, là điểm số cao nhất trong hội đồng thi.
+                        </p>
+                    </div>
+                    <div class="p-6 rounded-xl shadow-md memory-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <p class="font-semibold text-xl mb-2">Giải khuyến khích Giọng hát hay thị xã (Lớp 11)</p>
+                        <p class="text-lg leading-relaxed">
+                            Khi học lớp 11, Thanh Vân đã tham gia và đạt giải khuyến khích dòng nhạc nhẹ tại cuộc thi Giọng hát hay thị xã.
+                        </p>
+                    </div>
+                    <div class="p-6 rounded-xl shadow-md memory-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        <p class="text-lg leading-relaxed">
+                            Trong kỳ thi tốt nghiệp THPT Quốc gia, Thanh Vân tiếp tục đạt 8.5 điểm môn Văn. Đặc biệt, điểm năng khiếu của cô nằm trong top cao tại kỳ thi của các trường Đại học nghệ thuật, khẳng định năng lực và quyết tâm theo đuổi con đường âm nhạc chuyên nghiệp.
+                        </p>
+                    </div>
+                     <div class="p-6 rounded-xl shadow-md memory-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                        <p class="font-semibold text-xl mb-2">Đỗ Trường Đại học Thanh nhạc Hạ Long</p>
+                        <p class="text-lg leading-relaxed">
+                            Với những nỗ lực không ngừng, Phan Thanh Vân đã chính thức đỗ vào Trường Đại học Thanh nhạc Hạ Long, đánh dấu một bước tiến quan trọng trong hành trình thực hiện ước mơ trở thành giáo viên thanh nhạc.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Kỷ niệm - Section này có hiệu ứng parallax và AOS -->
+            <section id="ky-niem" class="section-container text-left" data-speed="0.07" role="region" aria-labelledby="ky-niem-title">
+                <h3 id="ky-niem-title" class="section-title text-center">Hành trình và Kỷ niệm</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="p-6 rounded-xl shadow-md memory-card" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="https://i.postimg.cc/Ty2C0wNh/3318ad35-20c6-4abb-8156-167e010aff6f.jpg"
+                             alt="Thanh Vân biểu diễn trên sân khấu"
+                             class="rounded-lg shadow-sm mb-4">
+                        <p class="font-semibold text-xl mb-2">Bước ngoặt đầu tiên trên sân khấu</p>
+                        <p class="text-lg leading-relaxed">
+                            Bước vào cấp 3, một cơ hội đã đến với Thanh Vân khi cô học lớp 10. Đó là lần đầu tiên cô dám đứng một mình trên sân khấu để thể hiện giọng hát của mình. Khoảnh khắc ấy đánh dấu một bước ngoặt quan trọng trong hành trình theo đuổi nghệ thuật của cô. Sự ủng hộ và đón nhận nồng nhiệt từ thầy cô, bạn bè đã giúp cô lấy lại tự tin, mở ra một con đường mới đầy hy vọng.
+                        </p>
+                    </div>
+                    <div class="p-6 rounded-xl shadow-md memory-card" data-aos="fade-left" data-aos-duration="1000">
+                        <img src="https://i.postimg.cc/2LWwyBy9/8816bcc3-c97b-4cc1-bfad-90c1efdf02d4.jpg"
+                             alt="Thanh Vân cùng gia đình"
+                             class="rounded-lg shadow-sm mb-4">
+                        <p class="font-semibold text-xl mb-2">Sự đồng hành từ gia đình</p>
+                        <p class="text-lg leading-relaxed">
+                            Nhận thấy sự quyết tâm và tiến bộ của cô bé, gia đình dần thay đổi quan điểm. Họ bắt đầu ủng hộ và đồng hành cùng Thanh Vân trên con đường nghệ thuật, trở thành nguồn động viên lớn lao giúp cô tiến xa hơn.
+                        </p>
+                    </div>
+                    <div class="p-6 rounded-xl shadow-md memory-card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+                        <img src="https://i.postimg.cc/62yzsPXX/217266a5-deeb-4847-9286-50a663d0a9c1.jpg"
+                             alt="Vân đi tiệc cưới hay dự tiệc"
+                             class="rounded-lg shadow-sm mb-4">
+                        <p class="font-semibold text-xl mb-2">Vân đi tiệc cưới hay dự tiệc</p>
+                        <p class="text-lg leading-relaxed">
+                            Trong một khoảnh khắc đặc biệt, Phan Thanh Vân đã có mặt tại một buổi tiệc cưới ấm cúng, chia sẻ niềm vui cùng gia đình và bạn bè. Cô ấy đã tận hưởng không khí trang trọng và hạnh phúc của sự kiện này.
+                        </p>
+                    </div>
+                    <div class="p-6 rounded-xl shadow-md memory-card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+                        <img src="https://i.postimg.cc/8Fyw0Sx4/36123e84-3a11-4388-a238-4b48aac9fe98.jpg"
+                             alt="Thanh Vân với bằng tốt nghiệp"
+                             class="rounded-lg shadow-sm mb-4">
+                        <p class="font-semibold text-xl mb-2">Hành trình phía trước và những nỗ lực mới</p>
+                        <p class="text-lg leading-relaxed">
+                            Với nền tảng vững chắc từ sự hỗ trợ của gia đình và nhà trường, Thanh Vân tiếp tục theo đuổi ước mơ ca hát. Mới đây, ngày 28/3/2025, cô vừa tham gia dự thi năng khiếu tại trường Cao Đẳng Nghệ thuật Hà Nội. Mặc dù chỉ đỗ được hệ trung cấp nhưng Thanh Vân cố gắng tiếp tục dự thi năng khiếu tại các trường nghệ thuật khác để đạt được kết quả cao hơn như Vân mong muốn!
+                        </p>
+                        <p class="text-lg leading-relaxed mt-2 italic">
+                            Câu chuyện của cô là minh chứng cho việc kiên trì theo đuổi đam mê và tầm quan trọng của sự ủng hộ từ người thân trong hành trình chinh phục ước mơ!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lời chứng thực/Trích dẫn - Section này có hiệu ứng parallax và AOS -->
+            <section id="testimonials" class="section-container text-left" data-speed="0.09" role="region" aria-labelledby="testimonials-title">
+                <h3 id="testimonials-title" class="section-title text-center">Lời chứng thực & Trích dẫn</h3>
+                <div class="testimonial-carousel" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="testimonial-container" id="testimonial-container">
+                        <div class="testimonial-item" role="group" aria-label="Lời chứng thực 1">
+                            <img src="https://placehold.co/80x80/DE5299/FFFFFF?text=Bạn+Bè" alt="Ảnh bạn bè">
+                            <p>"Vân là một người bạn tuyệt vời và luôn truyền cảm hứng cho tôi bằng niềm đam mê âm nhạc của cô ấy. Giọng hát của Vân thực sự rất hay và đầy cảm xúc!"</p>
+                            <div class="author">- Một người bạn thân</div>
+                        </div>
+                        <div class="testimonial-item" role="group" aria-label="Lời chứng thực 2">
+                            <img src="https://placehold.co/80x80/DE5299/FFFFFF?text=Thầy+Cô" alt="Ảnh thầy cô">
+                            <p>"Phan Thanh Vân là một học sinh chăm chỉ và có năng khiếu đặc biệt trong lĩnh vực thanh nhạc. Chúng tôi tin rằng em sẽ đạt được nhiều thành công trong tương lai."</p>
+                            <div class="author">- Thầy cô tại Trường Đại học Hạ Long</div>
+                        </div>
+                        <div class="testimonial-item" role="group" aria-label="Lời chứng thực 3">
+                            <img src="https://placehold.co/80x80/DE5299/FFFFFF?text=Gia+Đình" alt="Ảnh gia đình">
+                            <p>"Gia đình luôn tự hào về Vân. Cô bé đã vượt qua rất nhiều khó khăn để theo đuổi ước mơ của mình. Chúng tôi sẽ luôn ủng hộ cô bé trên mọi chặng đường."</p>
+                            <div class="author">- Gia đình của Vân</div>
+                        </div>
+                    </div>
+                     <!-- Navigation arrows for carousel -->
+                    <button class="carousel-arrow left" onclick="prevTestimonial()" aria-label="Lời chứng thực trước">&#10094;</button>
+                    <button class="carousel-arrow right" onclick="nextTestimonial()" aria-label="Lời chứng thực tiếp theo">&#10095;</button>
+                </div>
+                <div class="carousel-dots" id="carousel-dots" role="tablist">
+                    <span class="dot active" data-index="0" role="tab" aria-selected="true" aria-controls="testimonial-container"></span>
+                    <span class="dot" data-index="1" role="tab" aria-selected="false" aria-controls="testimonial-container"></span>
+                    <span class="dot" data-index="2" role="tab" aria-selected="false" aria-controls="testimonial-container"></span>
+                </div>
+            </section>
+
+            <!-- Thư viện ảnh - Section này có hiệu ứng parallax và AOS -->
+            <section id="thu-vien-anh" class="section-container text-left" data-speed="0.1" role="region" aria-labelledby="thu-vien-anh-title">
+                <h3 id="thu-vien-anh-title" class="section-title text-center">Thư viện ảnh</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="gallery-item" data-aos="fade-up" data-aos-duration="800" role="button" aria-label="Xem ảnh đại diện Phan Thanh Vân">
+                        <img src="https://i.postimg.cc/LJpyqvzt/671a83ef-26bd-418b-8dbd-faa2d9ce070b.jpg" alt="Ảnh đại diện Phan Thanh Vân" class="gallery-img" loading="lazy">
+                        <div class="image-placeholder"><div class="spinner"></div></div>
+                        <div class="gallery-caption">Ảnh đại diện</div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="50" role="button" aria-label="Xem ảnh Vân trong tà áo dài">
+                        <img src="https://i.postimg.cc/Q9wmjq8W/e39621dc-90f9-414e-abab-cb4d53b27b75.jpg" alt="Phan Thanh Vân trong tà áo dài" class="gallery-img" loading="lazy">
+                        <div class="image-placeholder"><div class="spinner"></div></div>
+                        <div class="gallery-caption">Vân trong tà áo dài</div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" role="button" aria-label="Xem ảnh Vân tạo dáng áo dài">
+                        <img src="https://i.postimg.cc/gxHg3RDf/31903ffd-2807-412c-bbd1-a84092294f9e.jpg" alt="Phan Thanh Vân tạo dáng áo dài" class="gallery-img" loading="lazy">
+                        <div class="image-placeholder"><div class="spinner"></div></div>
+                        <div class="gallery-caption">Vân tạo dáng áo dài</div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150" role="button" aria-label="Xem ảnh Vân biểu diễn trên sân khấu">
+                        <img src="https://i.postimg.cc/Ty2C0wNh/3318ad35-20c6-4abb-8156-167e010aff6f.jpg" alt="Phan Thanh Vân biểu diễn trên sân khấu" class="gallery-img" loading="lazy">
+                        <div class="image-placeholder"><div class="spinner"></div></div>
+                        <div class="gallery-caption">Vân biểu diễn trên sân khấu</div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" role="button" aria-label="Xem ảnh Vân cùng người thân">
+                        <img src="https://i.postimg.cc/2LWwyBy9/8816bcc3-c97b-4cc1-bfad-90c1efdf02d4.jpg" alt="Phan Thanh Vân cùng người thân" class="gallery-img" loading="lazy">
+                        <div class="image-placeholder"><div class="spinner"></div></div>
+                        <div class="gallery-caption">Vân cùng người thân</div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="250" role="button" aria-label="Xem ảnh Vân đi tiệc cưới hay dự tiệc">
+                        <img src="https://i.postimg.cc/62yzsPXX/217266a5-deeb-4847-9286-50a663d0a9c1.jpg" alt="Vân đi tiệc cưới hay dự tiệc" class="gallery-img" loading="lazy">
+                        <div class="image-placeholder"><div class="spinner"></div></div>
+                        <div class="gallery-caption">Vân đi tiệc cưới hay dự tiệc</div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" role="button" aria-label="Xem ảnh Thanh Vân với bằng tốt nghiệp">
+                        <img src="https://i.postimg.cc/8Fyw0Sx4/36123e84-3a11-4388-a238-4b48aac9fe98.jpg" alt="Thanh Vân với bằng tốt nghiệp" class="gallery-img" loading="lazy">
+                        <div class="image-placeholder"><div class="spinner"></div></div>
+                        <div class="gallery-caption">Vân với bằng tốt nghiệp</div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="350" role="button" aria-label="Xem ảnh Phan Thanh Vân tại sự kiện">
+                        <img src="https://i.postimg.cc/F7cCG1mV/z6821461297030-c49bf3e081fa282a8e3a7cd92875f4d9.jpg" alt="Phan Thanh Vân tại sự kiện" class="gallery-img" loading="lazy">
+                        <div class="image-placeholder"><div class="spinner"></div></div>
+                        <div class="gallery-caption">Vân tại sự kiện</div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" role="button" aria-label="Xem ảnh Phan Thanh Vân chụp ảnh kỷ niệm">
+                        <img src="https://i.postimg.cc/jDbg1KS0/z6821461314785-da5ea89b81671ffadfe4a805e668753b.jpg" alt="Phan Thanh Vân chụp ảnh kỷ niệm" class="gallery-img" loading="lazy">
+                        <div class="image-placeholder"><div class="spinner"></div></div>
+                        <div class="gallery-caption">Vân chụp ảnh kỷ niệm</div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="450" role="button" aria-label="Xem ảnh Phan Thanh Vân trên sân khấu">
+                        <img src="https://i.postimg.cc/BtVhhGRN/z6822513480097-db23ded3a2508a429588cbd350ce6cbc.jpg" alt="Phan Thanh Vân trên sân khấu" class="gallery-img" loading="lazy">
+                        <div class="image-placeholder"><div class="spinner"></div></div>
+                        <div class="gallery-caption">Vân biểu diễn</div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500" role="button" aria-label="Xem ảnh Phan Thanh Vân với hoa">
+                        <img src="https://i.postimg.cc/9DjYSXbP/z6822513482925-c94a7a1ef8475719106262918d8b1fad.jpg" alt="Phan Thanh Vân với hoa" class="gallery-img" loading="lazy">
+                        <div class="image-placeholder"><div class="spinner"></div></div>
+                        <div class="gallery-caption">Vân và bó hoa</div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="550" role="button" aria-label="Xem ảnh Phan Thanh Vân với phong cách trẻ trung">
+                        <img src="https://i.postimg.cc/KKxQKcgc/z6822513489782-ace3588483717545acc1549d2cadb400.jpg" alt="Phan Thanh Vân với phong cách trẻ trung" class="gallery-img" loading="lazy">
+                        <div class="image-placeholder"><div class="spinner"></div></div>
+                        <div class="gallery-caption">Phong cách trẻ trung</div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600" role="button" aria-label="Xem ảnh Phan Thanh Vân trong trang phục biểu diễn">
+                        <img src="https://i.postimg.cc/sQ2ccnct/z6822513501834-0ede5200597c825a8b77e40545b453f6.jpg" alt="Phan Thanh Vân trong trang phục biểu diễn" class="gallery-img" loading="lazy">
+                        <div class="image-placeholder"><div class="spinner"></div></div>
+                        <div class="gallery-caption">Trang phục biểu diễn</div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="650" role="button" aria-label="Xem ảnh Phan Thanh Vân selfie">
+                        <img src="https://i.postimg.cc/w1h0TRMb/z6822513509816-1eb1b3927d8b0b4db96c913679d357dc.jpg" alt="Phan Thanh Vân selfie" class="gallery-img" loading="lazy">
+                        <div class="image-placeholder"><div class="spinner"></div></div>
+                        <div class="gallery-caption">Vân selfie</div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700" role="button" aria-label="Xem ảnh Phan Thanh Vân tự tin">
+                        <img src="https://i.postimg.cc/JGXQPHN4/z6822513522825-416b6d5c3b3824beeb660c7c71a886d6.jpg" alt="Phan Thanh Vân tự tin" class="gallery-img" loading="lazy">
+                        <div class="image-placeholder"><div class="spinner"></div></div>
+                        <div class="gallery-caption">Vân tự tin</div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="750" role="button" aria-label="Xem ảnh Phan Thanh Vân với nụ cười">
+                        <img src="https://i.postimg.cc/87BmV8X2/z6822513530746-78e27eb644c6931c76d4d501da2059ac.jpg" alt="Phan Thanh Vân với nụ cười" class="gallery-img" loading="lazy">
+                        <div class="image-placeholder"><div class="spinner"></div></div>
+                        <div class="gallery-caption">Nụ cười của Vân</div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800" role="button" aria-label="Xem ảnh Phan Thanh Vân và bạn bè">
+                        <img src="https://i.postimg.cc/LhwTt3Zb/z6822513616566-6353ef307582d7f67657dd73baf42e51.jpg" alt="Phan Thanh Vân và bạn bè" class="gallery-img" loading="lazy">
+                        <div class="image-placeholder"><div class="spinner"></div></div>
+                        <div class="gallery-caption">Vân và bạn bè</div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="850" role="button" aria-label="Xem ảnh Phan Thanh Vân trong buổi tiệc">
+                        <img src="https://i.postimg.cc/Y4rfrXJh/z6822513623770-b6e9edffa0e2b0f828001f3419158353.jpg" alt="Phan Thanh Vân trong buổi tiệc" class="gallery-img" loading="lazy">
+                        <div class="image-placeholder"><div class="spinner"></div></div>
+                        <div class="gallery-caption">Vân trong buổi tiệc</div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="900" role="button" aria-label="Xem ảnh Phan Thanh Vân tạo dáng">
+                        <img src="https://i.postimg.cc/DJmrsSfh/z6822513625766-5abb83d0c0a4ffe0702099ca9566d4e4.jpg" alt="Phan Thanh Vân tạo dáng" class="gallery-img" loading="lazy">
+                        <div class="image-placeholder"><div class="spinner"></div></div>
+                        <div class="gallery-caption">Vân tạo dáng</div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="950" role="button" aria-label="Xem ảnh Phan Thanh Vân chụp ảnh">
+                        <img src="https://i.postimg.cc/RJHws2nb/z6822513626819-f1e2f40b0ebaeebbdabbb3c111a80ff0.jpg" alt="Phan Thanh Vân chụp ảnh" class="gallery-img" loading="lazy">
+                        <div class="image-placeholder"><div class="spinner"></div></div>
+                        <div class="gallery-caption">Vân chụp ảnh</div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1000" role="button" aria-label="Xem ảnh Phan Thanh Vân với ánh mắt cuốn hút">
+                        <img src="https://i.postimg.cc/LY7zVmh1/z6822513629160-1cc32cab061b19fb72d82ef27e24ac30.jpg" alt="Phan Thanh Vân với ánh mắt cuốn hút" class="gallery-img" loading="lazy">
+                        <div class="image-placeholder"><div class="spinner"></div></div>
+                        <div class="gallery-caption">Ánh mắt cuốn hút</div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1050" role="button" aria-label="Xem ảnh Phan Thanh Vân trong khoảnh khắc tự nhiên">
+                        <img src="https://i.postimg.cc/Sj2LxYt7/z6822513629357-078f31a46c8290691f420360df2e90b3.jpg" alt="Phan Thanh Vân trong khoảnh khắc tự nhiên" class="gallery-img" loading="lazy">
+                        <div class="image-placeholder"><div class="spinner"></div></div>
+                        <div class="gallery-caption">Khoảnh khắc tự nhiên</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Liên hệ - Section này có hiệu ứng parallax và AOS -->
+            <section id="lien-he" class="section-container text-left" data-speed="0.12" role="region" aria-labelledby="lien-he-title">
+                <h3 id="lien-he-title" class="section-title text-center">Liên hệ & Kết nối</h3>
+                <p class="text-lg mb-6 text-center" data-aos="fade-up" data-aos-duration="800">
+                    Để tiếp tục hành trình theo đuổi đam mê, Thanh Vân luôn mong muốn được kết nối với những người có chung tình yêu với âm nhạc, đồng thời nhận được sự ủng hộ và góp ý từ mọi người. Nếu bạn quan tâm, muốn trao đổi hoặc hỗ trợ cô ấy trên con đường nghệ thuật, đừng ngại liên hệ!
+                </p>
+
+                <h4 class="text-2xl font-semibold text-neon-pink-bold mb-4 text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Hợp tác & Đặt lịch biểu diễn 🎤 ✨🎤✨</h4>
+                <p class="text-lg mb-6 text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    Nếu bạn muốn mời tôi biểu diễn trong các sự kiện như đám cưới, tiệc sinh nhật, chương trình văn nghệ hay bất kỳ buổi biểu diễn nào khác, hãy liên hệ ngay để trao đổi và sắp xếp lịch trình! Thanh Vân luôn sẵn sàng mang đến những ca khúc ý nghĩa và không gian âm nhạc tràn cảm xúc.
+                </p>
+
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-16 mt-8" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                    <a href="#" class="flex flex-col items-center contact-link" data-contact="phanthanhvan2010qy@gmail.com" id="email-contact-link" role="button" aria-label="Sao chép địa chỉ Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 4v7a2 2 0 002 2h14a2 2 0 002-2v-7m-18 0l-1 1a2 2 0 000 2l1 1m18-4l1 1a2 2 0 010 2l-1 1" />
+                        </svg>
+                        <span class="text-xl font-medium">phanthanhvan2010qy@gmail.com</span>
+                    </a>
+                    <a href="#" class="flex flex-col items-center contact-link" data-contact="0387213836" id="phone-contact-link" role="button" aria-label="Sao chép số điện thoại">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        <span class="text-xl font-medium">0387 213 836</span>
+                    </a>
+                </div>
+                <p class="text-lg mt-8 text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    📍 Địa chỉ: Thôn Bãi Hai, Xã Tiền An, Thị xã Quảng Yên, Tỉnh Quảng Ninh.
+                </p>
+                <!-- Google Map Embed -->
+                <div class="mt-8 w-full h-80 rounded-lg overflow-hidden shadow-md" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" role="application" aria-label="Bản đồ vị trí">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119335.79728639234!2d106.8458998822995!3d21.00282928392157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a51eb8a55428f%3A0x6e9a0f4a8e6e5a0!2zVGjhu4sgUXXhuqNuZyBZb3V0aCDEkOG6oW5jZSBDZW50ZXIgQ2x1YiAtIFRydW5nIFRhcSBOaMOgIEtodXkgQ2h1eeG7g24gUXXhuqNuZyBZc3V0aA!5e0!3m2!1svi!2svn!4v1700000000000!5m2!1svi!2svn"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Bản đồ vị trí của Phan Thanh Vân">
+                    </iframe>
+                </div>
+                <p class="text-lg mt-4 text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                    Rất mong bạn được đồng hành trong những sự kiện đặc biệt này! 🎶💫
+                </p>
+            </section>
+        </main>
+
+        <!-- Lời kết/Footer -->
+        <footer class="bg-gray-800 p-6 text-center text-sm mt-8 rounded-t-xl" role="contentinfo">
+            <p>Trang web này được tạo ra với tất cả tình yêu thương dành cho Phan Thanh Vân.</p>
+            <p>&copy; 2025. Mọi quyền được bảo lưu.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="https://www.facebook.com/phan.thanh.van.839386?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Liên kết Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.tiktok.com/@vanvanvaychacgi?_t=ZS-8uyzsQBHdlg&_r=1" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Liên kết TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.youtube.com/@thanhvanphan-un4nl" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Liên kết YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <!-- Real-time Clock -->
+            <div id="real-time-clock" class="text-xs mt-4"></div>
+        </footer>
+    </div> <!-- End of main-content-wrapper -->
+
+    <!-- Lightbox Modal - Modal hiển thị ảnh lớn -->
+    <div id="myModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="caption">
+        <span class="close-modal" aria-label="Đóng ảnh">&times;</span>
+        <img class="modal-content" id="img01" alt="Ảnh đang xem">
+        <a class="modal-nav-button prev" onclick="plusSlides(-1)" role="button" aria-label="Ảnh trước">&#10094;</a>
+        <a class="modal-nav-button next" onclick="plusSlides(1)" role="button" aria-label="Ảnh tiếp theo">&#10095;</a>
+        <div id="caption" class="modal-caption"></div>
+    </div>
+
+    <!-- Clipboard Message -->
+    <div id="clipboard-message" class="clipboard-message" role="status" aria-live="polite"></div>
+
+    <!-- Back to Top Button - Nút cuộn lên đầu trang -->
+    <button onclick="topFunction()" id="backToTopBtn" title="Cuộn lên đầu trang" aria-label="Cuộn lên đầu trang">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <!-- Cursor Trail Elements (hidden on mobile via CSS) -->
+    <div class="cursor-trail" id="cursor-trail-1" aria-hidden="true"></div>
+    <div class="cursor-trail" id="cursor-trail-2" aria-hidden="true"></div>
+    <div class="cursor-trail" id="cursor-trail-3" aria-hidden="true"></div>
+    <div class="cursor-trail" id="cursor-trail-4" aria-hidden="true"></div>
+    <div class="cursor-trail" id="cursor-trail-5" aria-hidden="true"></div>
+
+    <!-- Floating Action Button (FAB) -->
+    <div id="fab-container">
+        <button id="fab-main-button" onclick="toggleFabOptions()" aria-label="Mở tùy chọn liên hệ">
+            <i class="fas fa-microphone"></i>
+        </button>
+        <div id="fab-options" role="menu" aria-hidden="true">
+            <a href="#" data-contact="phanthanhvan2010qy@gmail.com" onclick="copyToClipboardAndShowMessage(event);" role="menuitem" aria-label="Sao chép địa chỉ Email">
+                <i class="fas fa-envelope"></i> Email
+            </a>
+            <a href="#" data-contact="0387213836" onclick="copyToClipboardAndShowMessage(event);" role="menuitem" aria-label="Sao chép số điện thoại">
+                <i class="fas fa-phone"></i> Điện thoại
+            </a>
+            <a href="https://www.facebook.com/phan.thanh.van.839386?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" role="menuitem" aria-label="Truy cập Facebook">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/countup.js@2.8.0/dist/countUp.min.js"></script>
+    <script>
+        // Khởi tạo AOS (Animate On Scroll) Library
+        AOS.init({
+            once: true, // Chỉ animate một lần khi cuộn tới
+            mirror: false // Không lặp lại animation khi cuộn lên
+        });
+
+        // Initialize Tone.js for sound effects
+        let pluckSynth;
+        let isPlayingSound = false; // Flag to prevent rapid sound re-triggering
+
+        try {
+            // Check if AudioContext is available
+            if (window.AudioContext || window.webkitAudioContext) {
+                pluckSynth = new Tone.PluckSynth().toDestination();
+                // Preload a simple sound to avoid delay on first click
+                // This call should be scheduled slightly in the future as well
+                pluckSynth.triggerAttackRelease("C4", "8n", Tone.context.now() + 0.01);
+            } else {
+                console.warn("AudioContext not supported, sound effects disabled.");
+                pluckSynth = null; // Disable synth if not supported
+            }
+        } catch (e) {
+            console.error("Error initializing Tone.js:", e);
+            pluckSynth = null; // Disable synth on error
+        }
+
+        function playSound() {
+            if (pluckSynth && !isPlayingSound) {
+                isPlayingSound = true;
+                try {
+                    // Schedule the sound slightly in the future to avoid "start time must be strictly greater" error
+                    pluckSynth.triggerAttackRelease("G4", "32n", Tone.context.now() + 0.05); // Increased offset
+                    setTimeout(() => {
+                        isPlayingSound = false;
+                    }, 100); // Allow sound to play for 100ms before allowing another trigger
+                } catch (e) {
+                    console.error("Error playing sound:", e);
+                    isPlayingSound = false; // Reset flag on error
+                }
+            }
+        }
+
+        // Add hover sound to navigation links
+        document.querySelectorAll('.navbar a, .section-nav-sidebar a, .social-icon-link, .hero-button, .fab-button, .fab-options a, #backToTopBtn, .carousel-arrow, .dot, .contact-link').forEach(element => {
+            element.addEventListener('mouseenter', playSound);
+        });
+
+
+        // JavaScript cho Preloader và Cutscene
+        const cutsceneOverlay = document.getElementById('cutscene-overlay');
+        const cutscenePreloader = document.getElementById('cutscene-preloader');
+        const cutsceneBgImage = document.getElementById('cutscene-bg-image');
+        const cutsceneText = document.getElementById('cutscene-text');
+        const enterSiteButton = document.getElementById('enter-site-button');
+        const mainContentWrapper = document.getElementById('main-content-wrapper');
+        const heroSection = document.getElementById('trang-chu'); // Get the hero section
+        const socialSidebar = document.getElementById('social-sidebar');
+        const scrollDownIndicator = document.querySelector('.scroll-down-indicator');
+        const sectionNavSidebar = document.getElementById('section-nav-sidebar');
+
+
+        const cutsceneMessages = [
+            "Chào mừng đến với thế giới âm nhạc của Phan Thanh Vân",
+            "Nơi đam mê và nỗ lực hội tụ",
+            "Khám phá hành trình đầy cảm hứng",
+            "Cùng lắng nghe những giai điệu từ trái tim"
+        ];
+        const cutsceneImages = [
+            "https://i.postimg.cc/BtVhhGRN/z6822513480097-db23ded3a2508a429588cbd350ce6cbc.jpg",
+            "https://i.postimg.cc/9DjYSXbP/z6822513482925-c94a7a1ef8475719106262918d8b1fad.jpg",
+            "https://i.postimg.cc/KKxQKcgc/z6822513489782-ace3588483717545acc1549d2cadb400.jpg",
+            "https://i.postimg.cc/sQ2ccnct/z6822513501834-0ede5200597c825a8b77e40545b453f6.jpg"
+        ];
+        let currentCutsceneStep = 0;
+        let cutsceneTypingInterval;
+        let cutsceneImageInterval;
+
+        function typeCutsceneText(text, element, callback) {
+            let i = 0;
+            element.textContent = ''; // Clear existing text
+            element.style.opacity = '1';
+            element.style.transform = 'translateY(0)';
+            cutsceneTypingInterval = setInterval(() => {
+                if (i < text.length) {
+                    element.textContent += text.charAt(i);
+                    i++;
+                } else {
+                    clearInterval(cutsceneTypingInterval);
+                    if (callback) callback();
+                }
+            }, 50); // Typing speed
+        }
+
+        function showNextCutsceneStep() {
+            if (currentCutsceneStep < cutsceneMessages.length) {
+                // Fade out current image and text
+                cutsceneBgImage.style.opacity = '0';
+                cutsceneBgImage.style.transform = 'scale(1.08)';
+                cutsceneText.style.opacity = '0';
+                cutsceneText.style.transform = 'translateY(20px)';
+
+                setTimeout(() => {
+                    // Update image source and start typing new text
+                    cutsceneBgImage.src = cutsceneImages[currentCutsceneStep];
+                    cutsceneBgImage.style.opacity = '1';
+                    cutsceneBgImage.style.transform = 'scale(1)';
+
+                    typeCutsceneText(cutsceneMessages[currentCutsceneStep], cutsceneText, () => {
+                        currentCutsceneStep++;
+                        // If not the last step, schedule next step
+                        if (currentCutsceneStep < cutsceneMessages.length) {
+                            cutsceneImageInterval = setTimeout(showNextCutsceneStep, 3000); // Wait 3 seconds after typing to show next
+                        } else {
+                            // Last step completed, show button
+                            cutscenePreloader.style.display = 'none';
+                            enterSiteButton.style.display = 'block';
+                            setTimeout(() => {
+                                enterSiteButton.style.opacity = '1';
+                                enterSiteButton.style.transform = 'scale(1)';
+                            }, 100);
+                        }
+                    });
+                }, 1000); // Allow 1 second for fade out
+            }
+        }
+
+        function startCutscene() {
+            document.body.style.overflow = 'hidden'; // Prevent scrolling during cutscene
+            cutsceneOverlay.style.display = 'flex';
+            cutscenePreloader.style.display = 'block'; // Show spinner initially
+
+            setTimeout(() => {
+                cutscenePreloader.style.display = 'none'; // Hide spinner after initial load
+                showNextCutsceneStep(); // Start the first step
+            }, 2000); // Initial delay for preloader
+        }
+
+        function hideCutscene() {
+            clearInterval(cutsceneTypingInterval); // Stop any ongoing typing
+            clearTimeout(cutsceneImageInterval); // Stop any pending image transitions
+            cutsceneOverlay.style.opacity = '0';
+            document.body.style.overflow = 'auto'; // Re-enable scrolling
+            mainContentWrapper.classList.add('active'); // Show main content
+            socialSidebar.classList.add('show'); // Show social sidebar
+            sectionNavSidebar.classList.add('show'); // Show section nav sidebar
+
+            // Start Tone.js context on user interaction
+            if (pluckSynth && Tone.context.state !== 'running') {
+                Tone.start();
+            }
+
+            setTimeout(() => {
+                cutsceneOverlay.style.display = 'none';
+            }, 1000); // Hide overlay after transition
+        }
+
+        enterSiteButton.addEventListener('click', hideCutscene);
+        window.addEventListener('load', startCutscene);
+
+
+        // JavaScript cho Navbar - Thêm hiệu ứng kính mờ khi cuộn
+        const navbar = document.getElementById('navbar');
+        const navLinks = document.querySelectorAll('.navbar a');
+        const sections = document.querySelectorAll('main section'); // Lấy tất cả các section trong main
+        const sectionTitles = document.querySelectorAll('.section-title');
+        const logoTextElement = document.querySelector('.main-logo-svg text');
+        const sectionNavLinks = document.querySelectorAll('#section-nav-sidebar a');
+
+
+        window.addEventListener('scroll', () => {
+            // Hiệu ứng kính mờ cho navbar
+            if (window.scrollY > 50) { // Khi cuộn xuống hơn 50px
+                navbar.classList.add('scrolled');
+                scrollDownIndicator.classList.add('hidden'); // Hide scroll indicator
+            } else {
+                navbar.classList.remove('scrolled');
+                scrollDownIndicator.classList.remove('hidden'); // Show scroll indicator
+            }
+
+            // Scroll Spy cho navbar links và section nav sidebar
+            let currentSectionId = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - navbar.offsetHeight; // Điều chỉnh offset để link active đúng lúc
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+                    currentSectionId = section.id;
+                }
+            });
+
+            // Update main navbar links
+            navLinks.forEach(link => {
+                link.classList.remove('active-link');
+                if (link.getAttribute('href').includes(currentSectionId)) {
+                    link.classList.add('active-link');
+                }
+            });
+
+            // Update section navigation sidebar links
+            sectionNavLinks.forEach(link => {
+                link.classList.remove('active-link');
+                if (link.getAttribute('href').includes(currentSectionId)) {
+                    link.classList.add('active-link');
+                }
+            });
+
+
+            // Scroll Progress Bar
+            const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = (window.scrollY / totalHeight) * 100;
+            document.getElementById('scroll-progress-bar').style.width = progress + '%';
+
+            // Animate section titles on scroll
+            sectionTitles.forEach(title => {
+                const titleRect = title.getBoundingClientRect();
+                if (titleRect.top < window.innerHeight * 0.8 && titleRect.bottom > 0) {
+                    title.classList.add('animated-title');
+                } else {
+                    title.classList.remove('animated-title');
+                }
+            });
+        });
+
+        // Smooth scroll for all internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                playSound(); // Play sound on navigation click
+
+                // Enhanced scroll-to-section animation with slight bounce
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const navbarHeight = navbar.offsetHeight;
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+                // Close mobile menu if open
+                if (mobileMenu.classList.contains('open')) {
+                    mobileMenu.classList.remove('open');
+                    mobileMenuButton.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+
+        // JavaScript cho Mobile Menu - Xử lý đóng mở menu trên thiết bị di động
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true' || false;
+            mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+            mobileMenu.classList.toggle('open');
+            playSound(); // Play sound on mobile menu toggle
+        });
+
+        // Function to create ripple effect
+        function createRipple(event, element) {
+            const ripple = document.createElement('span');
+            ripple.classList.add('ripple-effect');
+            element.appendChild(ripple);
+
+            const rect = element.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            // Calculate coordinates relative to the element
+            const x = (event.clientX || event.touches[0].clientX) - rect.left;
+            const y = (event.clientY || event.touches[0].clientY) - rect.top;
+
+            ripple.style.width = ripple.style.height = `${size}px`;
+            ripple.style.left = `${x - size / 2}px`;
+            ripple.style.top = `${y - size / 2}px`;
+
+            ripple.addEventListener('animationend', () => {
+                ripple.remove();
+            });
+        }
+
+        // Mobile touch interaction for Hero Section (Ripple effect on touch)
+        heroSection.addEventListener('touchstart', (e) => {
+            e.preventDefault(); // Prevent default touch behavior (like text selection)
+            createRipple(e, heroSection); // Pass the event object directly
+            playSound(); // Play sound on hero touch
+        }, { passive: false }); // Use passive: false to allow preventDefault
+
+        // Desktop click interaction for Hero Section (Ripple effect on click)
+        heroSection.addEventListener('click', (e) => {
+            createRipple(e, heroSection); // Pass the event object directly
+            playSound(); // Play sound on hero click
+        });
+
+        // JavaScript cho Lightbox (Thư viện ảnh) - Hiển thị ảnh lớn và điều hướng
+        const modal = document.getElementById("myModal");
+        const modalImg = document.getElementById("img01");
+        const captionText = document.getElementById("caption");
+        const galleryItems = document.querySelectorAll(".gallery-item");
+        let slideIndex = 0; // Biến theo dõi ảnh hiện tại trong lightbox
+
+        // Lưu trữ tất cả các URL ảnh và chú thích
+        const galleryImages = [
+            { src: "https://i.postimg.cc/LJpyqvzt/671a83ef-26bd-418b-8dbd-faa2d9ce070b.jpg", caption: "Ảnh đại diện Phan Thanh Vân" },
+            { src: "https://i.postimg.cc/Q9wmjq8W/e39621dc-90f9-414e-abab-cb4d53b27b75.jpg", caption: "Vân trong tà áo dài" },
+            { src: "https://i.postimg.cc/gxHg3RDf/31903ffd-2807-412c-bbd1-a84092294f9e.jpg", caption: "Vân tạo dáng áo dài" },
+            { src: "https://i.postimg.cc/Ty2C0wNh/3318ad35-20c6-4abb-8156-167e010aff6f.jpg", caption: "Vân biểu diễn trên sân khấu" },
+            { src: "https://i.postimg.cc/2LWwyBy9/8816bcc3-c97b-4cc1-bfad-90c1efdf02d4.jpg", caption: "Vân cùng người thân" },
+            { src: "https://i.postimg.cc/62yzsPXX/217266a5-deeb-4847-9286-50a663d0a9c1.jpg", caption: "Vân đi tiệc cưới hay dự tiệc" },
+            { src: "https://i.postimg.cc/8Fyw0Sx4/36123e84-3a11-4388-a238-4b48aac9fe98.jpg", caption: "Vân với bằng tốt nghiệp" },
+            { src: "https://i.postimg.cc/F7cCG1mV/z6821461297030-c49bf3e081fa282a8e3a7cd92875f4d9.jpg", caption: "Vân tại sự kiện" },
+            { src: "https://i.postimg.cc/jDbg1KS0/z6821461314785-da5ea89b81671ffadfe4a805e668753b.jpg", caption: "Vân chụp ảnh kỷ niệm" },
+            { src: "https://i.postimg.cc/BtVhhGRN/z6822513480097-db23ded3a2508a429588cbd350ce6cbc.jpg", caption: "Vân biểu diễn" },
+            { src: "https://i.postimg.cc/9DjYSXbP/z6822513482925-c94a7a1ef8475719106262918d8b1fad.jpg", caption: "Vân và bó hoa" },
+            { src: "https://i.postimg.cc/KKxQKcgc/z6822513489782-ace3588483717545acc1549d2cadb400.jpg", caption: "Phong cách trẻ trung" },
+            { src: "https://i.postimg.cc/sQ2ccnct/z6822513501834-0ede5200597c825a8b77e40545b453f6.jpg", caption: "Trang phục biểu diễn" },
+            { src: "https://i.postimg.cc/w1h0TRMb/z6822513509816-1eb1b3927d8b0b4db96c913679d357dc.jpg", caption: "Vân selfie" },
+            { src: "https://i.postimg.cc/JGXQPHN4/z6822513522825-416b6d5c3b3824beeb660c7c71a886d6.jpg", caption: "Vân tự tin" },
+            { src: "https://i.postimg.cc/87BmV8X2/z6822513530746-78e27eb644c6931c76d4d501da2059ac.jpg", caption: "Nụ cười của Vân" },
+            { src: "https://i.postimg.cc/LhwTt3Zb/z6822513616566-6353ef307582d7f67657dd73baf42e51.jpg", caption: "Vân và bạn bè" },
+            { src: "https://i.postimg.cc/Y4rfrXJh/z6822513623770-b6e9edffa0e2b0f828001f3419158353.jpg", caption: "Vân trong buổi tiệc" },
+            { src: "https://i.postimg.cc/DJmrsSfh/z6822513625766-5abb83d0c0a4ffe0702099ca9566d4e4.jpg", caption: "Vân tạo dáng" },
+            { src: "https://i.postimg.cc/RJHws2nb/z6822513626819-f1e2f40b0ebaeebbdabbb3c111a80ff0.jpg", caption: "Vân chụp ảnh" },
+            { src: "https://i.postimg.cc/LY7zVmh1/z6822513629160-1cc32cab061b19fb72d82ef27e24ac30.jpg", caption: "Ánh mắt cuốn hút" },
+            { src: "https://i.postimg.cc/Sj2LxYt7/z6822513629357-078f31a46c8290691f420360df2e90b3.jpg", caption: "Khoảnh khắc tự nhiên" }
+        ];
+
+        galleryItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                openModal(index);
+                playSound(); // Play sound on image click
+            });
+        });
+
+        function openModal(index) {
+            modal.style.display = "block";
+            slideIndex = index;
+            showSlides(slideIndex);
+        }
+
+        function showSlides(n) {
+            if (n >= galleryImages.length) { slideIndex = 0 }
+            if (n < 0) { slideIndex = galleryImages.length - 1 }
+            modalImg.src = galleryImages[slideIndex].src;
+            captionText.innerHTML = galleryImages[slideIndex].caption;
+        }
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+            playSound(); // Play sound on slide change
+        }
+
+        document.querySelector(".close-modal").addEventListener('click', () => {
+            modal.style.display = "none";
+            playSound(); // Play sound on close modal
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = "none";
+                playSound(); // Play sound on close modal by clicking outside
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.style.display === 'block') {
+                modal.style.display = 'none';
+                playSound(); // Play sound on close modal with escape
+            }
+        });
+
+        // Testimonials Carousel - Logic cho carousel lời chứng thực
+        const testimonialContainer = document.getElementById('testimonial-container');
+        const testimonialItems = document.querySelectorAll('.testimonial-item');
+        const dots = document.querySelectorAll('.dot');
+        let currentTestimonialIndex = 0;
+        let autoSlideInterval;
+
+        function showTestimonial(index) {
+            testimonialContainer.style.transform = `translateX(-${index * 100}%)`;
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+                dot.setAttribute('aria-selected', i === index);
+            });
+            currentTestimonialIndex = index;
+        }
+
+        function nextTestimonial() {
+            let newIndex = (currentTestimonialIndex + 1) % testimonialItems.length;
+            showTestimonial(newIndex);
+            resetAutoSlide();
+        }
+
+        function prevTestimonial() {
+            let newIndex = (currentTestimonialIndex - 1 + testimonialItems.length) % testimonialItems.length;
+            showTestimonial(newIndex);
+            resetAutoSlide();
+        }
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(nextTestimonial, 5000); // Change slide every 5 seconds
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            startAutoSlide();
+        }
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', (e) => {
+                const index = parseInt(e.target.dataset.index);
+                showTestimonial(index);
+                resetAutoSlide();
+                playSound(); // Play sound on dot click
+            });
+        });
+
+        // Start auto-sliding when page loads
+        window.addEventListener('load', startAutoSlide);
+
+
+        // JavaScript cho Contact Section - Copy to Clipboard
+        function copyToClipboardAndShowMessage(event) {
+            event.preventDefault(); // Prevent default link behavior
+            const contactValue = event.currentTarget.dataset.contact;
+            const messageElement = document.getElementById('clipboard-message');
+
+            // Use document.execCommand('copy') for better compatibility in iframes
+            const tempInput = document.createElement('textarea');
+            tempInput.value = contactValue;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            messageElement.textContent = `Đã sao chép: ${contactValue} ✅`;
+            messageElement.classList.add('show');
+
+            setTimeout(() => {
+                messageElement.classList.remove('show');
+            }, 2000); // Hide message after 2 seconds
+        }
+
+        // Add click event listeners to contact links
+        document.getElementById('email-contact-link').addEventListener('click', copyToClipboardAndShowMessage);
+        document.getElementById('phone-contact-link').addEventListener('click', copyToClipboardAndShowMessage);
+
+
+        // JavaScript cho Back to Top Button - Nút cuộn lên đầu trang
+        const backToTopBtn = document.getElementById("backToTopBtn");
+
+        window.onscroll = function() { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            playSound(); // Play sound on back to top click
+        }
+
+        // Cursor Trail Effect (Desktop only)
+        const cursorTrails = document.querySelectorAll('.cursor-trail');
+        let currentTrail = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            if (window.innerWidth >= 768) { // Only on desktop
+                cursorTrails[currentTrail].style.opacity = '1';
+                cursorTrails[currentTrail].style.transform = `translate(${e.clientX}px, ${e.clientY}px) scale(1)`;
+                currentTrail = (currentTrail + 1) % cursorTrails.length;
+                // Fade out old trails
+                cursorTrails.forEach((trail, index) => {
+                    if (index !== currentTrail) {
+                        trail.style.opacity = '0';
+                        trail.style.transform = `translate(${e.clientX}px, ${e.clientY}px) scale(0)`;
+                    }
+                });
+            }
+        });
+
+        // Floating Action Button (FAB)
+        const fabMainButton = document.getElementById('fab-main-button');
+        const fabOptions = document.getElementById('fab-options');
+
+        function toggleFabOptions() {
+            const isHidden = fabOptions.style.display === 'none' || fabOptions.style.display === '';
+            if (isHidden) {
+                fabOptions.style.display = 'flex';
+                setTimeout(() => {
+                    fabOptions.classList.add('show');
+                }, 10); // Small delay to trigger transition
+            } else {
+                fabOptions.classList.remove('show');
+                setTimeout(() => {
+                    fabOptions.style.display = 'none';
+                }, 300); // Hide after transition
+            }
+            playSound(); // Play sound on FAB toggle
+        }
+
+        // Close FAB options if clicked outside
+        document.addEventListener('click', (event) => {
+            if (!fabContainer.contains(event.target) && fabOptions.classList.contains('show')) {
+                fabOptions.classList.remove('show');
+                setTimeout(() => {
+                    fabOptions.style.display = 'none';
+                }, 300);
+            }
+        });
+
+
+        // Dark Mode Toggle Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
+        const sunIcon = themeToggle.querySelector('.fa-sun');
+        const moonIcon = themeToggle.querySelector('.fa-moon');
+        const mobileSunIcon = mobileThemeToggle.querySelector('.fa-sun');
+        const mobileMoonIcon = mobileThemeToggle.querySelector('.fa-moon');
+
+        // Function to set theme
+        function setTheme(theme) {
+            if (theme === 'dark') {
+                document.documentElement.classList.add('dark');
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'inline-block';
+                mobileSunIcon.style.display = 'none';
+                mobileMoonIcon.style.display = 'inline-block';
+                themeToggle.querySelector('.toggle-circle').style.transform = 'translateX(100%)';
+                mobileThemeToggle.querySelector('.toggle-circle').style.transform = 'translateX(100%)';
+            } else {
+                document.documentElement.classList.remove('dark');
+                sunIcon.style.display = 'inline-block';
+                moonIcon.style.display = 'none';
+                mobileSunIcon.style.display = 'inline-block';
+                mobileMoonIcon.style.display = 'none';
+                themeToggle.querySelector('.toggle-circle').style.transform = 'translateX(0)';
+                mobileThemeToggle.querySelector('.toggle-circle').style.transform = 'translateX(0)';
+            }
+            localStorage.setItem('theme', theme);
+        }
+
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        setTheme(savedTheme);
+
+        // Toggle theme on click
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.classList.contains('dark') ? 'light' : 'dark';
+            setTheme(currentTheme);
+            playSound(); // Play sound on theme toggle
+        });
+
+        mobileThemeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.classList.contains('dark') ? 'light' : 'dark';
+            setTheme(currentTheme);
+            playSound(); // Play sound on theme toggle
+        });
+
+        // Live Counter Logic (CountUp.js)
+        const yearsActiveCounter = new CountUp('years-active-counter', 0, 10, 0, 2.5, { suffix: '+' }); // Assuming 10+ years of activity
+        const projectsCounter = new CountUp('projects-counter', 0, 50, 0, 2.5, { suffix: '+' }); // Assuming 50+ projects
+        const awardsCounter = new CountUp('awards-counter', 0, 5, 0, 2.5, { suffix: '+' }); // Assuming 5+ awards
+
+        // Trigger counters when section is visible
+        const liveFactsSection = document.getElementById('live-facts');
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    yearsActiveCounter.start();
+                    projectsCounter.start();
+                    awardsCounter.start();
+                    observer.unobserve(entry.target); // Stop observing once animated
+                }
+            });
+        }, { threshold: 0.5 }); // Trigger when 50% of the section is visible
+
+        observer.observe(liveFactsSection);
+
+        // Real-time Clock for a different timezone (e.g., New York)
+        function updateRealTimeClock() {
+            const now = new Date();
+            const options = {
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                timeZoneName: 'short',
+                timeZone: 'America/New_York' // New York timezone
+            };
+            const newYorkTime = now.toLocaleTimeString('en-US', options);
+            document.getElementById('real-time-clock').textContent = `Giờ tại New York: ${newYorkTime}`;
+        }
+
+        // Update clock every second
+        setInterval(updateRealTimeClock, 1000);
+        updateRealTimeClock(); // Initial call to display immediately
+
+        // Khoảnh khắc Vân (Random Quote/Image)
+        const moments = [
+            { quote: "Âm nhạc là ngôn ngữ của tâm hồn.", image: "https://i.postimg.cc/F7cCG1mV/z6821461297030-c49bf3e081fa282a8e3a7cd92875f4d9.jpg" },
+            { quote: "Mỗi nốt nhạc là một câu chuyện.", image: "https://i.postimg.cc/87BmV8X2/z6822513530746-78e27eb644c6931c76d4d501da2059ac.jpg" },
+            { quote: "Hành trình không giới hạn.", image: "https://i.postimg.cc/KKxQKcgc/z6822513489782-ace3588483717545acc1549d2cadb400.jpg" },
+            { quote: "Sống trọn vẹn từng khoảnh khắc.", image: "https://i.postimg.cc/Sj2LxYt7/z6822513629357-078f31a46c8290691f420360df2e90b3.jpg" }
+        ];
+
+        function displayRandomMoment() {
+            const randomIndex = Math.floor(Math.random() * moments.length);
+            const moment = moments[randomIndex];
+            // For now, let's just log it or display it in a subtle way,
+            // as there isn't a dedicated "Khoảnh khắc Vân" section yet.
+            // For high feasibility, I'll add a small, subtle text display in the footer.
+            const footerMomentDisplay = document.createElement('p');
+            footerMomentDisplay.className = 'text-xs italic mt-2 text-metallic-pink';
+            footerMomentDisplay.textContent = `"${moment.quote}"`;
+            document.querySelector('footer').appendChild(footerMomentDisplay);
+        }
+
+        // Call on load after main content is active
+        window.addEventListener('load', () => {
+             // Delay to ensure main content is visible
+            setTimeout(displayRandomMoment, 2000);
+        });
+
+    </script>
+</body>
+</html>
